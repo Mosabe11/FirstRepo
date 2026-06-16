@@ -63,7 +63,11 @@ CRIT_MODEL    = os.environ.get("CRIT_MODEL", "deepseek-chat")   # same model to 
 # OPTIONAL UPGRADE: for stronger error-catching, point CRIT at a DIFFERENT model later, e.g.:
 #   export CRIT_BASE_URL="https://openrouter.ai/api/v1"
 #   export CRIT_MODEL="openai/gpt-4o-mini"   export CRIT_API_KEY="your-openrouter-key"
-# Confirm DeepSeek's current image-input model name in their API docs if generation errors.
+
+# INPUT MODE: "text" (default) feeds the page's extracted text — works on DeepSeek (text-only API).
+# "vision" sends the page image instead — only use with a vision-capable model (e.g. via OpenRouter).
+USE_VISION = os.environ.get("USE_VISION", "0").lower() in ("1", "true", "yes")
+TEXT_CAP = 8000
 
 ARABIC_RE = re.compile(r'[\u0600-\u06FF]')
 
@@ -84,7 +88,7 @@ STRICT RULES:
   "correct": <0-3>, "explanation": "...", "source": "<exact text from page>"}} ]}}.
 Produce at most {Q_PER_PAGE} questions; fewer is fine if the page is thin."""
 
-CRIT_SYSTEM = f"""You are an independent reviewer checking a multiple-choice question against the page image it was made from.
+CRIT_SYSTEM = f"""You are an independent reviewer checking a multiple-choice question against the page it was made from.
 Judge ONLY whether the question is sound and supported by THIS page. Do not invent content.
 
 Check: (1) is the marked-correct answer actually supported by the page? (2) is there exactly ONE correct option?
@@ -106,13 +110,15 @@ def get_client(base_url, key, what):
     return OpenAI(api_key=key, base_url=base_url)
 
 
-def render_page(doc, idx):
-    """Render a PDF page to a base64 JPEG and also return its (possibly messy) text."""
-    import fitz
+def render_page(doc, idx, want_image):
+    """Return (base64 JPEG or None, extracted text) for a PDF page."""
+    import base64 as _b64
     page = doc[idx]
-    pix = page.get_pixmap(dpi=DPI)
-    b64 = base64.b64encode(pix.tobytes("jpeg")).decode()
     text = page.get_text("text") or ""
+    b64 = None
+    if want_image:
+        pix = page.get_pixmap(dpi=DPI)
+        b64 = _b64.b64encode(pix.tobytes("jpeg")).decode()
     return b64, text
 
 
@@ -153,11 +159,13 @@ def validate_q(q):
 
 
 def generate_page(gen, b64, text, page_no):
-    user = [
-        {"type": "text", "text": f"This is page {page_no}. Page text (may be reordered, RTL): "
-                                 f"\"\"\"{text[:1500]}\"\"\"  Generate the questions now."},
-        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}},
-    ]
+    instr = (f"This is page {page_no} of the study material. Use ONLY what is on this page.\n"
+             f"Page text:\n\"\"\"{text[:TEXT_CAP]}\"\"\"\nGenerate the questions now.")
+    if USE_VISION and b64:
+        user = [{"type": "text", "text": instr},
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}}]
+    else:
+        user = instr
     out = _chat_json(gen, GEN_MODEL, GEN_SYSTEM, user)
     if "_error" in out:
         return [], out["_error"]
@@ -169,14 +177,16 @@ def generate_page(gen, b64, text, page_no):
     return good, None
 
 
-def critique_q(crit, b64, q):
-    user = [
-        {"type": "text", "text": "Review this question against the page.\n" +
-            json.dumps({"question": q["question"], "options": q["options"],
-                        "correct": q["correct"], "source": q.get("source", "")},
-                       ensure_ascii=False)},
-        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}},
-    ]
+def critique_q(crit, b64, text, q):
+    payload = json.dumps({"question": q["question"], "options": q["options"],
+                          "correct": q["correct"], "source": q.get("source", "")},
+                         ensure_ascii=False)
+    if USE_VISION and b64:
+        user = [{"type": "text", "text": "Review this question against the page.\n" + payload},
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}}]
+    else:
+        user = (f"Review this question against the page below.\nPage text:\n"
+                f"\"\"\"{text[:TEXT_CAP]}\"\"\"\n{payload}")
     out = _chat_json(crit, CRIT_MODEL, CRIT_SYSTEM, user, retries=3)
     if "_error" in out:
         return {"verdict": "FLAG", "confidence": 0.0, "reason": "critique call failed: " + out["_error"]}
@@ -244,7 +254,7 @@ def run(pdf_path, page_spec):
 
     t0 = time.time()
     for i, idx in enumerate(todo, 1):
-        b64, text = render_page(doc, idx)
+        b64, text = render_page(doc, idx, USE_VISION)
         gen_qs, err = generate_page(gen, b64, text, idx + 1)
         if err:
             print(f"  page {idx+1}: generation error ({err}); will retry on next run")
@@ -253,7 +263,7 @@ def run(pdf_path, page_spec):
         for q in gen_qs:
             if is_duplicate(q["question"], seen):
                 continue
-            verdict = critique_q(crit, b64, q)
+            verdict = critique_q(crit, b64, text, q)
             rec = {
                 "id": state["next_id"], "image": None, "category": CATEGORY,
                 "question": {lang: q["question"]},
