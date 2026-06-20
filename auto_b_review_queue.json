@@ -1,0 +1,226 @@
+[
+  {
+    "id": 81,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale TMM van een aanhanger die je met rijbewijs B mag trekken zonder dat de combinatie de 3.500 kg overschrijdt?"
+    },
+    "options": {
+      "nl": [
+        "750 kg",
+        "1.500 kg",
+        "3.500 kg",
+        "4.250 kg"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Met rijbewijs B mag een aanhanger met een TMM van maximaal 750 kg worden getrokken, mits de combinatie niet boven 3.500 kg komt."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.5 Aanhangwagens ⚠️ (gecorrigeerd)",
+    "_source": "B = aanhanger TMM ≤ 750 kg óf combinatie ≤ 3.500 kg",
+    "_review": "FLAG (conf 1.0) — Vraag is dubbelzinnig: met B mag aanhanger ≤ 750 kg ongeacht combinatiegewicht, maar ook combinatie ≤ 3500 kg met aanhanger > 750 kg. De vraag specificeert 'zonder dat de combinatie de 3.500 kg oversc",
+    "_human_review": false
+  },
+  {
+    "id": 95,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoe ver mag lading maximaal per zijde uitsteken?"
+    },
+    "options": {
+      "nl": [
+        "10 cm",
+        "15 cm",
+        "20 cm",
+        "25 cm"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De tekst geeft aan dat lading per zijde maximaal 20 cm uit mag steken."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.8 Lading",
+    "_source": "lading per zijde ≤ 20 cm uit",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De sectie vermeldt expliciet 'lading per zijde ≤ 20 cm uit', wat overeenkomt met het juiste antwoord (20 cm). De afleiders zijn plausibel maar fout, en de vraag is volledig te beantwoorden met de gege",
+    "_human_review": true
+  },
+  {
+    "id": 96,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer moet een markeringsbord worden gebruikt bij uitstekende lading?"
+    },
+    "options": {
+      "nl": [
+        "Bij uitsteken van meer dan 50 cm",
+        "Bij uitsteken van meer dan 1 m",
+        "Bij uitsteken van meer dan 1,5 m",
+        "Bij uitsteken van meer dan 2 m"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De tekst stelt dat een markeringsbord verplicht is bij uitsteken van meer dan 1 m."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.8 Lading",
+    "_source": "markeringsbord (rood-wit, 50×50 cm) bij uitsteken > 1 m",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De sectie vermeldt expliciet 'markeringsbord (rood-wit, 50×50 cm) bij uitsteken > 1 m', wat overeenkomt met het juiste antwoord. De afleiders zijn plausibel maar fout.",
+    "_human_review": true
+  },
+  {
+    "id": 98,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoe ver mag ondeelbare lading maximaal naar voren uitsteken, gemeten vanaf het midden van het stuur?"
+    },
+    "options": {
+      "nl": [
+        "2,50 m",
+        "3,00 m",
+        "3,50 m",
+        "4,00 m"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De tekst geeft aan dat ondeelbare lading vóór maximaal 3,50 m vanaf het midden van het stuur mag uitsteken."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.8 Lading",
+    "_source": "ondeelbare lengte vóór ≤ 3,50 m vanaf midden stuur",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De vraag wordt exact ondersteund door de sectie: 'ondeelbare lengte vóór ≤ 3,50 m vanaf midden stuur'. Er is precies één juist antwoord (3,50 m), de afleiders zijn plausibel maar fout, en de vraag is ",
+    "_human_review": true
+  },
+  {
+    "id": 119,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Waaruit bestaat de stopafstand?"
+    },
+    "options": {
+      "nl": [
+        "Reactieafstand + remweg",
+        "Reactieafstand × remweg",
+        "Remweg + reactietijd",
+        "Snelheid ÷ remvertraging"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "De stopafstand is de som van reactieafstand en remweg."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.5 Stopafstand en remweg (tijdloos, volledig bruikbaar)",
+    "_source": "Stopafstand = reactieafstand + remweg.",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Stopafstand = reactieafstand + remweg.'",
+    "_human_review": true
+  },
+  {
+    "id": 122,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de remweg bij 100 km/u met een remvertraging van 5 m/s²?"
+    },
+    "options": {
+      "nl": [
+        "Ongeveer 38,6 m",
+        "Ongeveer 77,3 m",
+        "Ongeveer 27,5 m",
+        "Ongeveer 19,3 m"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Remweg = V² ÷ (2 × remvertraging). Bij 100 km/u (27,78 m/s) is V² ≈ 771,6, gedeeld door 10 ≈ 77,2 m."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.5 Stopafstand en remweg (tijdloos, volledig bruikbaar)",
+    "_source": "Remweg: V² ÷ (2 × remvertraging), met V in m/s. Voorbeeld (5 m/s²): ... 100 km/u → ~77,3 m.",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De vraag wordt exact ondersteund door de sectie: remweg bij 100 km/u en 5 m/s² is ~77,3 m, en dat is het enige juiste antwoord.",
+    "_human_review": true
+  },
+  {
+    "id": 128,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wie is vrijgesteld van de gordelplicht?"
+    },
+    "options": {
+      "nl": [
+        "Bestuurders van een taxi",
+        "Zwangere vrouwen",
+        "Kinderen groter dan 1,35 m",
+        "Bestuurders met een medische verklaring van het CBR"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Taxi- en buschauffeurs zijn vrijgesteld van de gordelplicht."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.6 Gordelplicht en kinderzitjes",
+    "_source": "Taxi-/buschauffeurs vrijgesteld van gordelplicht; medische ontheffing mogelijk (CBR-verklaring).",
+    "_review": "FLAG (conf 1.0) — Er zijn twee juiste antwoorden: 'Bestuurders van een taxi' en 'Bestuurders met een medische verklaring van het CBR' worden beide genoemd in de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 129,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent bord C22e?"
+    },
+    "options": {
+      "nl": [
+        "Milieuzone/nul-emissiezone hoofdbord.",
+        "Einde milieuzone.",
+        "Inrijverbod voor vrachtwagens.",
+        "Verbod voor gevaarlijke stoffen."
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "C22e is het nieuwe milieuzone/nul-emissiezone hoofdbord."
+    },
+    "_chapter": "HOOFDSTUK 5 — Verkeersborden (dekkings-checklist) `[BEELD]`",
+    "_section": "HOOFDSTUK 5 — Verkeersborden (dekkings-checklist) `[BEELD]`",
+    "_source": "C22e (nieuw, milieuzone/nul-emissiezone hoofdbord — altijd met onderbord)",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De vraag wordt gedekt door de sectie: C22e wordt genoemd als milieuzone/nul-emissiezone hoofdbord, en het juiste antwoord komt overeen.",
+    "_human_review": true
+  }
+]

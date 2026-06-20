@@ -1,0 +1,3614 @@
+[
+  {
+    "id": 1,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de definitie van gevaarherkenning volgens de tekst?"
+    },
+    "options": {
+      "nl": [
+        "Het herkennen van verkeersborden en hun betekenis.",
+        "Het vooraf inschatten dat er iets kan gebeuren en je rijgedrag daarop aanpassen.",
+        "Het kunnen benoemen van alle gevaren op de weg.",
+        "Het toepassen van de juiste remtechniek in noodsituaties."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De tekst definieert gevaarherkenning als 'vooraf inschatten dat er iets kan gebeuren en je rijgedrag daarop aanpassen'."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.0 Gevaarherkenning",
+    "_source": "Gevaarherkenning = vooraf inschatten dat er iets kan gebeuren en je rijgedrag daarop aanpassen.",
+    "_review": "PASS (conf 1.0) — De vraag wordt letterlijk ondersteund door de eerste zin van de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 2,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "In welke situatie moet je volgens de tekst 'remmen'?"
+    },
+    "options": {
+      "nl": [
+        "Bij een vrije, overzichtelijke weg zonder verkeer.",
+        "Bij mensen aan de overkant van de weg.",
+        "Bij een rollende bal op de weg.",
+        "Bij een lage snelheid met een situatie die nog kan veranderen."
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De tekst noemt 'rollende bal' als een situatie waarin je moet remmen."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.0 Gevaarherkenning",
+    "_source": "Remmen bij: kinderen/spelende kinderen, rollende bal, voetgangers/fietsers dicht bij de rijbaan, te weinig afstand, groot snelheidsverschil, mensen die jouw kant niet op kijken.",
+    "_review": "PASS (conf 1.0) — De vraag is correct beantwoord: 'rollende bal' staat expliciet in de bron als remsituatie.",
+    "_human_review": false
+  },
+  {
+    "id": 3,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer moet je 'gas loslaten' volgens de tekst?"
+    },
+    "options": {
+      "nl": [
+        "Bij een groot snelheidsverschil met de voorligger.",
+        "Bij mensen die jouw kant niet op kijken.",
+        "Bij een situatie die nog kan veranderen, met lage snelheid.",
+        "Bij een rollende bal die de weg op komt."
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De tekst geeft aan dat je gas loslaat bij 'lage snelheid met iets verderop, situatie die nog kan veranderen'."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.0 Gevaarherkenning",
+    "_source": "Gas loslaten bij: mensen aan de overkant, lage snelheid met iets verderop, situatie die nog kan veranderen.",
+    "_review": "PASS (conf 1.0) — De vraag is correct beantwoord en volledig gedekt door de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 4,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer is 'niets doen' de juiste keuze volgens de tekst?"
+    },
+    "options": {
+      "nl": [
+        "Als er voetgangers dicht bij de rijbaan lopen.",
+        "Als je te weinig afstand houdt tot de voorligger.",
+        "Op een vrije, overzichtelijke weg zonder verkeer in de buurt.",
+        "Als er een rollende bal op de weg verschijnt."
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De tekst zegt: 'Niets doen bij: vrije, overzichtelijke weg zonder verkeer in de buurt.'"
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.0 Gevaarherkenning",
+    "_source": "Niets doen bij: vrije, overzichtelijke weg zonder verkeer in de buurt.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: 'Niets doen' is correct bij een vrije, overzichtelijke weg zonder verkeer in de buurt. De andere opties zijn plausibele afleiders die bij 'remmen' h",
+    "_human_review": false
+  },
+  {
+    "id": 5,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Op welke factoren baseer je je keuze tussen remmen, gas loslaten of niets doen volgens de tekst?"
+    },
+    "options": {
+      "nl": [
+        "Alleen op de weersomstandigheden en het tijdstip van de dag.",
+        "Op de situatie, je snelheid (dashboard) en wat je in de spiegel ziet.",
+        "Op de kleur van de auto's en het type wegdek.",
+        "Op de aanwezigheid van verkeerslichten en borden."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De tekst vermeldt dat je kiest 'op basis van de situatie én je snelheid (dashboard) en wat je in de spiegel ziet'."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.0 Gevaarherkenning",
+    "_source": "Op het examen kies je tussen remmen, gas loslaten of niets doen, op basis van de situatie én je snelheid (dashboard) en wat je in de spiegel ziet.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: de keuze is gebaseerd op situatie, snelheid (dashboard) en spiegelbeeld.",
+    "_human_review": false
+  },
+  {
+    "id": 6,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat wordt in de verkeerswetgeving verstaan onder een 'bestuurder'?"
+    },
+    "options": {
+      "nl": [
+        "Iedereen die een voertuig bestuurt, inclusief fietsers en ruiters.",
+        "Elke weggebruiker behalve een voetganger.",
+        "Alleen de bestuurder van een motorvoertuig.",
+        "Iedereen die een motorvoertuig bestuurt."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Een bestuurder is elke weggebruiker behalve een voetganger."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.1 Begripsbepalingen (kernbegrippen)",
+    "_source": "Bestuurder: elke weggebruiker behalve een voetganger.",
+    "_review": "PASS (conf 1.0) — De definitie in de sectie komt exact overeen met het gemarkeerde juiste antwoord, er is precies één juist antwoord, de afleiders zijn plausibel maar fout, en de vraag is te beantwoorden met alleen dez",
+    "_human_review": false
+  },
+  {
+    "id": 7,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale constructiesnelheid van een bromfiets?"
+    },
+    "options": {
+      "nl": [
+        "25 km/u",
+        "30 km/u",
+        "45 km/u",
+        "50 km/u"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Een bromfiets heeft een maximale constructiesnelheid van 45 km/u."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.1 Begripsbepalingen (kernbegrippen)",
+    "_source": "Bromfiets: max 45 km/u, ≤ 50 cc (of elektromotor), geel kenteken; vanaf 16 jaar, helmplicht.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig gedekt door de sectie: bromfiets max 45 km/u. Één juist antwoord (45 km/u), afleiders plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 8,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Sinds wanneer geldt de helmplicht voor snorfietsen?"
+    },
+    "options": {
+      "nl": [
+        "1 januari 2022",
+        "1 januari 2023",
+        "1 januari 2024",
+        "1 januari 2025"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Sinds 1 januari 2023 geldt ook voor de snorfiets een helmplicht."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.1 Begripsbepalingen (kernbegrippen)",
+    "_source": "⚠️ Correctie/aanvulling: sinds 1 januari 2023 geldt ook voor de snorfiets een helmplicht.",
+    "_review": "PASS (conf 1.0) — De vraag wordt letterlijk ondersteund door de sectie: 'sinds 1 januari 2023 geldt ook voor de snorfiets een helmplicht.'",
+    "_human_review": false
+  },
+  {
+    "id": 9,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is het toegestane maximumgewicht van een bestelauto?"
+    },
+    "options": {
+      "nl": [
+        "Minder dan 3.500 kg",
+        "Meer dan 3.500 kg",
+        "Minder dan 2.500 kg",
+        "Meer dan 2.500 kg"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Een bestelauto heeft een toegestane maximum massa (TMM) van maximaal 3.500 kg."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.1 Begripsbepalingen (kernbegrippen)",
+    "_source": "Bestelauto: voor goederenvervoer, TMM ≤ 3.500 kg.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'Bestelauto: voor goederenvervoer, TMM ≤ 3.500 kg.' Het juiste antwoord is 'Minder dan 3.500 kg' (optie 0). Er is precies één juist antwoord, de afleiders zi",
+    "_human_review": false
+  },
+  {
+    "id": 10,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke weggebruikers mogen gebruikmaken van een busstrook?"
+    },
+    "options": {
+      "nl": [
+        "Alleen bussen",
+        "Bussen en taxi's met vergunning",
+        "Bussen, taxi's en fietsers",
+        "Alleen bussen en hulpdiensten"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Een busstrook is ook toegestaan voor taxi's met een vergunning."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.1 Begripsbepalingen (kernbegrippen)",
+    "_source": "busstrook = 'bus'-opdruk, ook taxi's met vergunning mogen erop.",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt dat busstroken ook door taxi's met vergunning gebruikt mogen worden, wat overeenkomt met het gemarkeerde juiste antwoord. Er is precies één juist antwoord, de afleiders zijn plausib",
+    "_human_review": false
+  },
+  {
+    "id": 11,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de hoogste rangorde in de verkeersregels?"
+    },
+    "options": {
+      "nl": [
+        "Verkeersregels",
+        "Verkeerstekens",
+        "Aanwijzingen van bevoegde personen",
+        "Verkeerslichten"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Aanwijzingen van bevoegde personen (politie, marechaussee, verkeersregelaar, etc.) hebben de hoogste rangorde."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.2 Aanwijzingen, verkeerstekens en verkeersregels",
+    "_source": "Rangorde (van hoog naar laag): 1) aanwijzingen (politie, marechaussee, verkeersregelaar/-brigadier, begeleider railvoertuig) → 2) verkeerstekens (borden, verkeerslichten, markeringen) → 3) verkeersregels.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: de rangorde geeft aanwijzingen als hoogste, en het juiste antwoord is optie 2 (aanwijzingen van bevoegde personen).",
+    "_human_review": false
+  },
+  {
+    "id": 12,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent een doorgetrokken streep op de weg?"
+    },
+    "options": {
+      "nl": [
+        "Je mag deze streep overschrijden als het veilig is",
+        "Je mag deze streep niet overschrijden",
+        "Je mag deze streep alleen overschrijden bij inhalen",
+        "Je mag deze streep overschrijden als er een onderbroken streep naast ligt aan jouw kant"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Een doorgetrokken streep mag niet worden overschreden."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.2 Aanwijzingen, verkeerstekens en verkeersregels",
+    "_source": "Doorgetrokken streep: niet overschrijden; ligt er aan jouw kant een onderbroken streep naast, dan mag jij wel.",
+    "_review": "PASS (conf 1.0) — De vraag en het juiste antwoord worden direct ondersteund door de sectie: 'Doorgetrokken streep: niet overschrijden; ligt er aan jouw kant een onderbroken streep naast, dan mag jij wel.' Er is precies",
+    "_human_review": false
+  },
+  {
+    "id": 13,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat geeft een blokmarkering aan?"
+    },
+    "options": {
+      "nl": [
+        "Een parkeerverbod",
+        "Scheiding van rijrichtingen bij voorsorteren, waarbij rechts inhalen is toegestaan",
+        "Een verplichte rijrichting",
+        "Een oversteekplaats voor voetgangers"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Blokmarkering scheidt rijrichtingen bij voorsorteren en rechts inhalen is toegestaan."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.2 Aanwijzingen, verkeerstekens en verkeersregels",
+    "_source": "Blokmarkering: scheidt rijrichtingen bij voorsorteren; rechts inhalen toegestaan.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: 'Blokmarkering: scheidt rijrichtingen bij voorsorteren; rechts inhalen toegestaan.' Er is precies één juist antwoord, de afleiders zijn plausibel ma",
+    "_human_review": false
+  },
+  {
+    "id": 14,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent een rood kruis op een matrixbord?"
+    },
+    "options": {
+      "nl": [
+        "De rijstrook is afgesloten en mag niet worden gebruikt",
+        "De rijstrook is alleen bestemd voor bussen",
+        "De maximumsnelheid is verlaagd",
+        "Er is een gevaarlijke situatie op de weg"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Een rood kruis op een matrixbord geeft aan dat de rijstrook niet gebruikt mag worden."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.2 Aanwijzingen, verkeerstekens en verkeersregels",
+    "_source": "Matrixborden/rijstrooksignalering: rood kruis = strook niet gebruiken; groene pijl = wel; 'bus' = alleen lijnbus; matrixbord gaat altijd vóór het bord langs de weg.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: 'rood kruis = strook niet gebruiken'.",
+    "_human_review": false
+  },
+  {
+    "id": 15,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de functie van een waarschuwingsstreep?"
+    },
+    "options": {
+      "nl": [
+        "Aangeven dat inhalen verboden is",
+        "Waarschuwen voor een gevaarlijker weggedeelte",
+        "Aangeven dat parkeren verboden is",
+        "Scheiden van rijstroken op een snelweg"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Een waarschuwingsstreep (meer streep dan tussenruimte) waarschuwt voor een gevaarlijker weggedeelte."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.2 Aanwijzingen, verkeerstekens en verkeersregels",
+    "_source": "Belijning/streepverhouding: meer streep dan tussenruimte = waarschuwingsstreep (gevaarlijker).",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'meer streep dan tussenruimte = waarschuwingsstreep (gevaarlijker)'. Er is precies één juist antwoord (optie 1), de afleiders zijn plausibel maar fout, en de",
+    "_human_review": false
+  },
+  {
+    "id": 16,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de juiste kijkvolgorde bij het wegrijden?"
+    },
+    "options": {
+      "nl": [
+        "Buitenspiegel → binnenspiegel → dode hoek",
+        "Binnenspiegel → buitenspiegel → dode hoek",
+        "Dode hoek → binnenspiegel → buitenspiegel",
+        "Buitenspiegel → dode hoek → binnenspiegel"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De kijkvolgorde is binnenspiegel, buitenspiegel, dode hoek."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.3 Gebruik van de rijbaan",
+    "_source": "In-/uitstappen en wegrijden: kijkvolgorde binnenspiegel → buitenspiegel → dode hoek, richting aangeven, niemand hinderen.",
+    "_review": "PASS (conf 1.0) — De vraag en het juiste antwoord worden letterlijk ondersteund door de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 17,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer mag een bestuurder links op de rijbaan rijden?"
+    },
+    "options": {
+      "nl": [
+        "Alleen bij het inhalen van een stilstaand voertuig",
+        "Alleen met reden zoals inhalen, voorsorteren links, links parkeren of op een rotonde",
+        "Altijd als er geen tegenliggers zijn",
+        "Alleen op wegen met een maximumsnelheid van 50 km/u of minder"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Links rijden is alleen toegestaan met een geldige reden, zoals inhalen, voorsorteren links, links parkeren of op een rotonde."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.3 Gebruik van de rijbaan",
+    "_source": "Rechts houden; links alleen met reden (inhalen, voorsorteren links, links parkeren, rotonde).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: 'Rechts houden; links alleen met reden (inhalen, voorsorteren links, links parkeren, rotonde).' Het juiste antwoord (optie 1) komt hiermee overeen, ",
+    "_human_review": false
+  },
+  {
+    "id": 18,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is het snelheidsverschil tussen een bromfietser en een auto binnen de bebouwde kom?"
+    },
+    "options": {
+      "nl": [
+        "Ongeveer 10 km/u",
+        "Ongeveer 20 km/u",
+        "Ongeveer 30 km/u",
+        "Ongeveer 40 km/u"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Het snelheidsverschil tussen bromfietsers en auto's binnen de bebouwde kom is ongeveer 20 km/u."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.3 Gebruik van de rijbaan",
+    "_source": "Bromfietsers binnen de bebouwde kom op de rijbaan (let op snelheidsverschil ± 20 km/u t.o.v. auto's).",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Bromfietsers binnen de bebouwde kom op de rijbaan (let op snelheidsverschil ± 20 km/u t.o.v. auto's)'. Er is precies één juist antwoord (ongeveer 20 ",
+    "_human_review": false
+  },
+  {
+    "id": 19,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent bord G11?"
+    },
+    "options": {
+      "nl": [
+        "Verplicht fietspad",
+        "Gecombineerd fiets/bromfietspad",
+        "Onverplicht fietspad",
+        "Einde fietspad"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Bord G11 is het verplichte fietspad."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.3 Gebruik van de rijbaan",
+    "_source": "Fietspaden: G11 verplicht fietspad; G12a gecombineerd fiets/bromfietspad; G13 onverplicht fietspad (bromfietsers niet, snorfietsers alleen met uitgeschakelde motor).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: G11 is verplicht fietspad, er is precies één juist antwoord, de afleiders zijn plausibel en fout, en de vraag is te beantwoorden met alleen deze sec",
+    "_human_review": false
+  },
+  {
+    "id": 20,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Op welke afstand moet een gevarendriehoek worden geplaatst op een snelweg?"
+    },
+    "options": {
+      "nl": [
+        "Ongeveer 30 meter",
+        "Ongeveer 50 meter",
+        "Ongeveer 100 meter",
+        "Ongeveer 150 meter"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Op een snelweg moet de gevarendriehoek op ongeveer 100 meter worden geplaatst."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.3 Gebruik van de rijbaan",
+    "_source": "Gevarendriehoek: plaatsen bij stilstaan op gevaarlijke plek; ± 30 m (binnen bebouwde kom), 100 m (snelweg).",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet '100 m (snelweg)', wat overeenkomt met het gemarkeerde juiste antwoord. De afleiders zijn plausibel maar fout, en de vraag is volledig te beantwoorden met de gegeven secti",
+    "_human_review": false
+  },
+  {
+    "id": 21,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent een groen driekleurig verkeerslicht?"
+    },
+    "options": {
+      "nl": [
+        "Stoppen",
+        "Doorrijden",
+        "Stoppen indien mogelijk",
+        "Nader gevaarlijk punt"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Groen betekent doorrijden."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.4 Verkeerslichten",
+    "_source": "Driekleurig: groen = doorrijden, oranje = stoppen indien mogelijk, rood = stoppen.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: groen = doorrijden.",
+    "_human_review": false
+  },
+  {
+    "id": 22,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet u doen bij een rood knipperlicht van een overweg?"
+    },
+    "options": {
+      "nl": [
+        "Doorrijden",
+        "Stoppen",
+        "Stoppen indien mogelijk",
+        "Rustig naderen"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Rood knipperlicht bij overweg betekent stoppen."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.4 Verkeerslichten",
+    "_source": "Overweglichten: rood knipperlicht = stoppen; wit knipperlicht = doorrijden.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Overweglichten: rood knipperlicht = stoppen'. Er is precies één juist antwoord (stoppen), de afleiders zijn plausibel maar fout, en de vraag is te be",
+    "_human_review": false
+  },
+  {
+    "id": 23,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Voor wie zijn tram-/buslichten bedoeld?"
+    },
+    "options": {
+      "nl": [
+        "Alle bestuurders",
+        "Alleen tram- en lijnbusbestuurders",
+        "Alleen fietsers",
+        "Alleen voetgangers"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Tram-/buslichten zijn alleen voor tram- en lijnbusbestuurders."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.4 Verkeerslichten",
+    "_source": "Tram-/buslichten: alleen voor tram-/lijnbusbestuurders (witte balken).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: tram-/buslichten zijn alleen voor tram-/lijnbusbestuurders.",
+    "_human_review": false
+  },
+  {
+    "id": 24,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent een geel knipperlicht?"
+    },
+    "options": {
+      "nl": [
+        "Stoppen",
+        "Doorrijden",
+        "Nader een gevaarlijk of onoverzichtelijk punt rustig",
+        "Rechtsaf vrij"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Geel knipperlicht waarschuwt voor een gevaarlijk of onoverzichtelijk punt."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.4 Verkeerslichten",
+    "_source": "Geel knipperlicht: nader gevaarlijk/onoverzichtelijk punt rustig.",
+    "_review": "PASS (conf 1.0) — Het juiste antwoord wordt letterlijk ondersteund door de sectie: 'Geel knipperlicht: nader gevaarlijk/onoverzichtelijk punt rustig.' Er is precies één juist antwoord, de afleiders zijn plausibel maar ",
+    "_human_review": false
+  },
+  {
+    "id": 25,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat geldt er als verkeerslichten buiten werking zijn (geel knipperlicht)?"
+    },
+    "options": {
+      "nl": [
+        "Alleen de gewone regels gelden",
+        "Borden en markeringen gelden, anders de gewone regels",
+        "U mag altijd doorrijden",
+        "U moet stoppen"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Bij geel knipperlicht gelden borden/markeringen, anders de gewone regels."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.4 Verkeerslichten",
+    "_source": "Buiten werking (geel knipperlicht): borden/markeringen gelden, anders de gewone regels.",
+    "_review": "PASS (conf 1.0) — De vraag wordt exact ondersteund door de sectie: bij geel knipperlicht gelden borden/markeringen, anders de gewone regels. Er is precies één juist antwoord (optie 2), de afleiders zijn plausibel maar ",
+    "_human_review": false
+  },
+  {
+    "id": 26,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de wettelijke maximumsnelheid op een autosnelweg in Nederland?"
+    },
+    "options": {
+      "nl": [
+        "100 km/u",
+        "120 km/u",
+        "130 km/u",
+        "80 km/u"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De wettelijke maximumsnelheid op autosnelwegen is 130 km/u, maar overdag (06:00-19:00) geldt op de meeste snelwegen 100 km/u."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.5 Snelheid ⚠️ (zwaar gecorrigeerd)",
+    "_source": "wettelijk max **130**",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'wettelijk max 130' staat expliciet vermeld. Er is precies één juist antwoord (130 km/u). De afleiders zijn plausibel maar fout. De vraag is te beantwoorden ",
+    "_human_review": false
+  },
+  {
+    "id": 27,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximumsnelheid voor een personenauto met aanhanger op een autosnelweg?"
+    },
+    "options": {
+      "nl": [
+        "100 km/u",
+        "90 km/u",
+        "80 km/u",
+        "70 km/u"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Met aanhanger of caravan mag je op de snelweg maximaal 90 km/u."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.5 Snelheid ⚠️ (zwaar gecorrigeerd)",
+    "_source": "Met aanhanger/caravan: altijd max **90 km/u** op de snelweg",
+    "_review": "PASS (conf 1.0) — De vraag wordt gedekt door de sectie: 'Met aanhanger/caravan: altijd max 90 km/u op de snelweg'. Het juiste antwoord (90 km/u) is correct en uniek. Afleiders zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 28,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de minimumsnelheid op een autoweg?"
+    },
+    "options": {
+      "nl": [
+        "60 km/u",
+        "50 km/u",
+        "40 km/u",
+        "Geen minimum"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Op een autoweg geldt een minimumsnelheid van 50 km/u."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.5 Snelheid ⚠️ (zwaar gecorrigeerd)",
+    "_source": "autoweg ≥ 50 km/u",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet 'autoweg ≥ 50 km/u', wat het juiste antwoord '50 km/u' ondersteunt. De afleiders zijn plausibel maar fout, en er is precies één juist antwoord.",
+    "_human_review": false
+  },
+  {
+    "id": 29,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer mag je het mistachterlicht voeren?"
+    },
+    "options": {
+      "nl": [
+        "Bij zicht minder dan 100 meter",
+        "Bij zicht minder dan 50 meter",
+        "Bij regen",
+        "Bij zicht minder dan 200 meter"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Het mistachterlicht mag alleen worden gevoerd bij zicht minder dan 50 meter, niet bij regen."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.5 Snelheid ⚠️ (zwaar gecorrigeerd)",
+    "_source": "mistachterlicht alleen bij zicht < 50 m, niet bij regen",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: mistachterlicht alleen bij zicht < 50 m, niet bij regen. Er is precies één juist antwoord (optie 2). De afleiders zijn plausibel maar fout. De vraag is te be",
+    "_human_review": false
+  },
+  {
+    "id": 30,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximumsnelheid binnen een 30-km zone?"
+    },
+    "options": {
+      "nl": [
+        "30 km/u",
+        "50 km/u",
+        "60 km/u",
+        "Stapvoets"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "In een 30-km zone is de maximumsnelheid 30 km/u."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.5 Snelheid ⚠️ (zwaar gecorrigeerd)",
+    "_source": "30-km zone | 30 km/u",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: '30-km zone | 30 km/u'.",
+    "_human_review": false
+  },
+  {
+    "id": 31,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Mag inhalen bij een spoorwegovergang?"
+    },
+    "options": {
+      "nl": [
+        "Ja, dat mag",
+        "Nee, dat is verboden",
+        "Alleen als er geen trein aankomt",
+        "Alleen met een snelheid onder 30 km/u"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "In tunnels en bij spoorwegovergangen mag inhalen wél, dit is een veelgemaakt misverstand."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.6 Inhalen en tegenkomen",
+    "_source": "In tunnels en bij spoorwegovergangen mág inhalen wél (veelgemaakt misverstand).",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'In tunnels en bij spoorwegovergangen mág inhalen wél (veelgemaakt misverstand).' Er is precies één juist antwoord (Ja, dat mag). De afleiders zijn pl",
+    "_human_review": false
+  },
+  {
+    "id": 32,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale lengte van een vrachtauto met aanhanger?"
+    },
+    "options": {
+      "nl": [
+        "18,75 meter",
+        "16,50 meter",
+        "20,75 meter",
+        "12 meter"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Een vrachtauto met aanhanger mag maximaal 18,75 meter lang zijn."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.6 Inhalen en tegenkomen",
+    "_source": "met aanhanger 18,75 m",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'met aanhanger 18,75 m'. Er is precies één juist antwoord (18,75 meter). De afleiders zijn plausibel (andere lengtes uit dezelfde sectie). De vraag is",
+    "_human_review": false
+  },
+  {
+    "id": 33,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale sleepafstand tussen twee motorvoertuigen?"
+    },
+    "options": {
+      "nl": [
+        "3 meter",
+        "5 meter",
+        "6 meter",
+        "10 meter"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De sleepafstand mag maximaal 5 meter zijn."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.7 Algemene bepalingen",
+    "_source": "Slepen: max 1 motorvoertuig; sleepafstand ≤ 5 m",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'sleepafstand ≤ 5 m'. Er is precies één juist antwoord (5 meter). De afleiders zijn plausibel maar fout. De vraag is te beantwoorden met alleen deze s",
+    "_human_review": false
+  },
+  {
+    "id": 34,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Sinds wanneer is het vasthouden van een mobiel elektronisch apparaat verboden voor alle bestuurders, inclusief fietsers?"
+    },
+    "options": {
+      "nl": [
+        "1 juli 2018",
+        "1 juli 2019",
+        "1 januari 2020",
+        "1 juli 2020"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Het vasthouden van een mobiel elektronisch apparaat is sinds 1 juli 2019 verboden voor alle bestuurders, ook fietsers."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.7 Algemene bepalingen",
+    "_source": "Correctie (telefoon): het vasthouden van een mobiel elektronisch apparaat is verboden voor alle bestuurders, óók fietsers (sinds 1 juli 2019).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: de correctie vermeldt expliciet 'sinds 1 juli 2019' en het juiste antwoord is optie 2 (1 juli 2019). Er is precies één juist antwoord, de afleiders ",
+    "_human_review": false
+  },
+  {
+    "id": 35,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de APK-keuringsperiode voor een personenauto op benzine met een eerste toelating na 4 jaar?"
+    },
+    "options": {
+      "nl": [
+        "Na 3 jaar, daarna jaarlijks",
+        "Na 4 jaar, daarna 2 jaar later, daarna 2 jaar later, daarna jaarlijks",
+        "Na 4 jaar, daarna jaarlijks",
+        "Na 5 jaar, daarna elke 2 jaar"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Voor benzine/elektrisch/hybride personenauto's ≤ 3.500 kg is de periodiciteit 4-2-2-1-1: eerste keuring na 4 jaar, daarna twee keer na 2 jaar, vanaf 8 jaar jaarlijks."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.7 Algemene bepalingen",
+    "_source": "Actueel personenauto ≤ 3.500 kg: benzine/elektrisch/hybride → periodiciteit 4-2-2-1-1 (1e keuring na 4 jaar, daarna 2× na 2 jaar, vanaf 8 jaar jaarlijks)",
+    "_review": "PASS (conf 1.0) — De vraag en het juiste antwoord worden exact ondersteund door de sectie: benzine auto 4-2-2-1-1, eerste keuring na 4 jaar.",
+    "_human_review": false
+  },
+  {
+    "id": 36,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke documenten moet een bestuurder verplicht bij zich hebben?"
+    },
+    "options": {
+      "nl": [
+        "Geldig rijbewijs, kopie kentekenbewijs, betaalde motorrijtuigenbelasting",
+        "Geldig rijbewijs, geldig kentekenbewijs/kentekencard, betaalde motorrijtuigenbelasting, goedgekeurde kentekenplaten",
+        "Geldig rijbewijs, geldig kentekenbewijs, APK-keuringsrapport",
+        "Geldig rijbewijs, kentekencard, verzekeringsbewijs"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De verplichte documenten zijn: geldig rijbewijs (geen kopie), geldig kentekenbewijs/kentekencard, betaalde motorrijtuigenbelasting en goedgekeurde kentekenplaten."
+    },
+    "_chapter": "HOOFDSTUK 1 — Basisverkeersregels",
+    "_section": "1.7 Algemene bepalingen",
+    "_source": "Verplichte documenten: geldig rijbewijs (geen kopie), geldig kentekenbewijs/kentekencard, betaalde motorrijtuigenbelasting, goedgekeurde kentekenplaten.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: de verplichte documenten worden genoemd en het juiste antwoord (optie 1) komt exact overeen. Er is precies één juist antwoord, de afleiders zijn pla",
+    "_human_review": false
+  },
+  {
+    "id": 37,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet een bestuurder doen bij het verlaten van een uitrit?"
+    },
+    "options": {
+      "nl": [
+        "Alleen gemotoriseerd verkeer voor laten gaan",
+        "Alleen voetgangers voor laten gaan",
+        "Alle weggebruikers (ook voetgangers) voor laten gaan",
+        "Stoppen en claxonneren"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Bij het verlaten van een uitrit moet een bestuurder alle weggebruikers, inclusief voetgangers, voor laten gaan."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.1 Inritten, uitritten en erven",
+    "_source": "Uitrit verlaten = alle weggebruikers (ook voetgangers) voor laten gaan.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Uitrit verlaten = alle weggebruikers (ook voetgangers) voor laten gaan.' Er is precies één juist antwoord (optie 2), de afleiders zijn plausibel maar",
+    "_human_review": false
+  },
+  {
+    "id": 38,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke snelheid geldt op een erf/woonerf?"
+    },
+    "options": {
+      "nl": [
+        "30 km/u",
+        "Stapvoets",
+        "50 km/u",
+        "15 km/u"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Op een erf/woonerf moet stapvoets worden gereden."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.1 Inritten, uitritten en erven",
+    "_source": "Erf/woonerf (G5/G6): stapvoets; voetgangers mogen hele breedte gebruiken; binnen het erf voorrang van rechts (ook fietsers); parkeren alleen in P-vakken/eigen terrein.",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet 'stapvoets' als snelheid op een erf/woonerf, wat overeenkomt met het gemarkeerde juiste antwoord. De afleiders zijn plausibel maar fout, en de vraag is volledig te beantwo",
+    "_human_review": false
+  },
+  {
+    "id": 39,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wie heeft binnen een erf/woonerf voorrang?"
+    },
+    "options": {
+      "nl": [
+        "Bestuurders van rechts",
+        "Voetgangers altijd",
+        "Fietsers altijd",
+        "Bestuurders van links"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Binnen een erf/woonerf geldt voorrang van rechts, ook voor fietsers."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.1 Inritten, uitritten en erven",
+    "_source": "binnen het erf voorrang van rechts (ook fietsers)",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'binnen het erf voorrang van rechts (ook fietsers)'. Optie 0 is correct, de andere zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 40,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Waar mag een bestuurder parkeren op een erf/woonerf?"
+    },
+    "options": {
+      "nl": [
+        "Overal langs de weg",
+        "Alleen in parkeervakken of op eigen terrein",
+        "Alleen op de stoep",
+        "Alleen op de rijbaan"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Op een erf/woonerf mag alleen in parkeervakken of op eigen terrein worden geparkeerd."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.1 Inritten, uitritten en erven",
+    "_source": "parkeren alleen in P-vakken/eigen terrein.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig gedekt door de sectie: 'parkeren alleen in P-vakken/eigen terrein'.",
+    "_human_review": false
+  },
+  {
+    "id": 41,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet je doen als je een kruispunt nadert en het verkeer staat vast?"
+    },
+    "options": {
+      "nl": [
+        "Doorrijden en hopen dat het verkeer doorstroomt",
+        "Het kruispunt niet oprijden als je het niet in één keer kunt verlaten",
+        "Stoppen op het kruispunt en wachten tot het verkeer verder gaat",
+        "Claxonneren om aan te geven dat je oversteekt"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Je mag een kruispunt niet blokkeren; je steekt pas over als je het in één keer vrij kunt verlaten."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.2 Gedrag op kruisingen",
+    "_source": "Kruispunt niet blokkeren; pas oversteken als je het in één keer vrij kunt verlaten; bij middenberm in twee etappes.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'Kruispunt niet blokkeren; pas oversteken als je het in één keer vrij kunt verlaten'. Het juiste antwoord (optie 1) komt hiermee overeen. Er is precies één j",
+    "_human_review": false
+  },
+  {
+    "id": 42,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoe steek je een kruispunt over met een middenberm?"
+    },
+    "options": {
+      "nl": [
+        "In één keer, zonder te stoppen",
+        "In twee etappes, met een stop op de middenberm",
+        "Alleen als er geen verkeer is",
+        "Met een snelheid van minimaal 30 km/u"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Bij een middenberm steek je het kruispunt in twee etappes over."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.2 Gedrag op kruisingen",
+    "_source": "Kruispunt niet blokkeren; pas oversteken als je het in één keer vrij kunt verlaten; bij middenberm in twee etappes.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'bij middenberm in twee etappes'.",
+    "_human_review": false
+  },
+  {
+    "id": 43,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is een belangrijk aspect van gedrag op een onoverzichtelijk kruispunt?"
+    },
+    "options": {
+      "nl": [
+        "Zo snel mogelijk doorrijden",
+        "Oogcontact maken en snelheid aanpassen",
+        "Altijd stoppen voor de stopstreep",
+        "Lichten uitdoen om anderen niet te verblinden"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Oogcontact en snelheid aanpassen aan overzichtelijkheid is belangrijk op een onoverzichtelijk kruispunt."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.2 Gedrag op kruisingen",
+    "_source": "Oogcontact en snelheid aanpassen aan overzichtelijkheid.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Oogcontact en snelheid aanpassen aan overzichtelijkheid' is het juiste antwoord, de andere opties zijn plausibel maar fout, en er is precies één juis",
+    "_human_review": false
+  },
+  {
+    "id": 44,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer mag een bestuurder een geluidssignaal (claxon) geven?"
+    },
+    "options": {
+      "nl": [
+        "Om een andere weggebruiker te waarschuwen voor een flitser",
+        "Alleen ter afwending van gevaar",
+        "Bij het inhalen van een fietser",
+        "Om een bekende te groeten"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Een claxon mag alleen gebruikt worden ter afwending van gevaar."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.3 Signalen",
+    "_source": "Signalen (claxon, lichtsignaal) alleen ter afwending van gevaar; niet onnodig claxonneren.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig gedekt door de sectie: claxon alleen ter afwending van gevaar. Optie 1 is correct, de andere zijn fout en plausibel.",
+    "_human_review": false
+  },
+  {
+    "id": 45,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer moet een bestuurder richting aangeven?"
+    },
+    "options": {
+      "nl": [
+        "Alleen bij het afslaan",
+        "Bij elke zijdelingse verplaatsing, zoals afslaan, inhalen, wegrijden, in-/uitvoegen en van rijstrook wisselen",
+        "Alleen bij het inhalen",
+        "Alleen bij het wisselen van rijstrook"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Richting aangeven is verplicht bij elke zijdelingse verplaatsing."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.3 Signalen",
+    "_source": "Richting aangeven verplicht bij elke zijdelingse verplaatsing (afslaan, inhalen, wegrijden, in-/uitvoegen, van rijstrook wisselen); daarna uitzetten.",
+    "_review": "PASS (conf 1.0) — De vraag en het juiste antwoord worden letterlijk ondersteund door de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 46,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer moeten alarmlichten worden gebruikt?"
+    },
+    "options": {
+      "nl": [
+        "Bij het parkeren in een parkeervak",
+        "Bij stilstaan op een gevaarlijke plek of in een file",
+        "Bij het achteruitrijden",
+        "Bij het naderen van een kruispunt"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Alarmlichten zijn verplicht bij stilstaan op een gevaarlijke plek of in een file."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.3 Signalen",
+    "_source": "Alarmlichten bij stilstaan op gevaarlijke plek of file; gevarendriehoek bij uitval.",
+    "_review": "PASS (conf 1.0) — De vraag wordt gedekt door de sectie: alarmlichten bij stilstaan op gevaarlijke plek of file.",
+    "_human_review": false
+  },
+  {
+    "id": 47,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welk voertuig heeft altijd en overal voorrang?"
+    },
+    "options": {
+      "nl": [
+        "Een takelwagen met geel zwaailicht",
+        "Een politieauto met blauw zwaai-/knipperlicht en tweetonige hoorn",
+        "Een vuilniswagen met zwaailicht",
+        "Een bus met geel zwaailicht"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Voertuigen met blauw zwaai-/knipperlicht en twee-/drietonige hoorn hebben altijd en overal voorrang."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.3 Signalen",
+    "_source": "Blauw zwaai-/knipperlicht + twee-/drietonige hoorn (politie/brandweer/ambulance): altijd en overal voorrang.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: blauw zwaai-/knipperlicht met tweetonige hoorn geeft altijd en overal voorrang. De afleiders zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 48,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is waar over een geel zwaailicht?"
+    },
+    "options": {
+      "nl": [
+        "Het geeft voorrang op alle andere weggebruikers",
+        "Het wordt gebruikt door politie en ambulance",
+        "Het verleent geen voorrang, maar waarschuwt voor bijzondere voertuigen zoals takelwagens of gladheidsbestrijding",
+        "Het mag alleen worden gebruikt bij stilstaande voertuigen"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Geel zwaailicht geeft geen voorrang, maar waarschuwt voor bijvoorbeeld takelwagens of gladheidsbestrijding."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.3 Signalen",
+    "_source": "Geel zwaailicht: o.a. takel-/gladheidsbestrijding (geen voorrang).",
+    "_review": "PASS (conf 1.0) — De sectie ondersteunt dat geel zwaailicht geen voorrang geeft en wordt gebruikt door takel-/gladheidsbestrijding; optie 2 is correct en de enige juiste.",
+    "_human_review": false
+  },
+  {
+    "id": 49,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de hoofdregel op een gelijkwaardig kruispunt?"
+    },
+    "options": {
+      "nl": [
+        "Voorrang verlenen aan bestuurders van links.",
+        "Voorrang verlenen aan bestuurders van rechts.",
+        "Voorrang verlenen aan bestuurders van tegenovergestelde richting.",
+        "Voorrang verlenen aan alle bestuurders."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Op gelijkwaardige kruispunten verleen je voorrang aan bestuurders van rechts."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.4 Voorrangsregels",
+    "_source": "Hoofdregel: op gelijkwaardige kruispunten verleen je voorrang aan bestuurders van rechts.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Hoofdregel: op gelijkwaardige kruispunten verleen je voorrang aan bestuurders van rechts.' Er is precies één juist antwoord (optie 1), de afleiders z",
+    "_human_review": false
+  },
+  {
+    "id": 50,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de juiste volgorde van voorrang?"
+    },
+    "options": {
+      "nl": [
+        "Verkeerslichten → voorrangsborden → voorrangsvoertuigen → regels.",
+        "Voorrangsvoertuigen → verkeerslichten → voorrangsborden/-tekens → regels.",
+        "Regels → voorrangsborden → verkeerslichten → voorrangsvoertuigen.",
+        "Voorrangsborden → voorrangsvoertuigen → verkeerslichten → regels."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De volgorde is: voorrangsvoertuigen (met optische+geluidssignalen) → verkeerslichten → voorrangsborden/-tekens → regels."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.4 Voorrangsregels",
+    "_source": "Volgorde: voorrangsvoertuigen (met optische+geluidssignalen) → verkeerslichten → voorrangsborden/-tekens → regels.",
+    "_review": "PASS (conf 1.0) — De vraag en het juiste antwoord worden letterlijk ondersteund door de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 51,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hebben voetgangers voorrang bij bord B6 of B7?"
+    },
+    "options": {
+      "nl": [
+        "Ja, altijd.",
+        "Nee, voetgangers zijn geen bestuurders.",
+        "Alleen bij bord B6.",
+        "Alleen bij bord B7."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Voetgangers zijn geen bestuurders, dus bij B6/B7 geen voorrang aan voetgangers."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.4 Voorrangsregels",
+    "_source": "Voetgangers zijn geen bestuurders → bij B6/B7 geen voorrang aan voetgangers.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'Voetgangers zijn geen bestuurders → bij B6/B7 geen voorrang aan voetgangers.' Er is precies één juist antwoord (optie 1), de afleiders zijn plausibel maar f",
+    "_human_review": false
+  },
+  {
+    "id": 52,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet een bestuurder die linksaf slaat doen ten opzichte van bestuurders van rechts?"
+    },
+    "options": {
+      "nl": [
+        "Voor laten gaan",
+        "Heeft voorrang",
+        "Alleen voor laten gaan als zij ook linksaf slaan",
+        "Geen actie nodig"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Bij linksaf slaan moet de bestuurder ook bestuurders van rechts voor laten gaan."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.5 Afslaan",
+    "_source": "Linksaf idem maar ook bestuurders van rechts voor laten gaan, ruime bocht.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'Linksaf idem maar ook bestuurders van rechts voor laten gaan, ruime bocht.' Het juiste antwoord is 'Voor laten gaan', de afleiders zijn plausibel maar fout,",
+    "_human_review": false
+  },
+  {
+    "id": 53,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke verkeersdeelnemers die rechtdoor gaan op dezelfde weg hebben voorrang op een afslaande bestuurder?"
+    },
+    "options": {
+      "nl": [
+        "Alleen motorvoertuigen",
+        "Alleen fietsers",
+        "Alleen voetgangers",
+        "Alle verkeer, inclusief fietsers en voetgangers"
+      ]
+    },
+    "correct": 3,
+    "explanation": {
+      "nl": "Rechtdoorgaand verkeer op dezelfde weg gaat vóór wie afslaat, inclusief fietsers en voetgangers."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.5 Afslaan",
+    "_source": "Rechtdoorgaand verkeer op dezelfde weg gaat vóór wie afslaat (incl. fietsers/voetgangers rechtdoor).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: rechtdoorgaand verkeer op dezelfde weg gaat vóór afslaand verkeer, inclusief fietsers en voetgangers. Er is precies één juist antwoord (optie 3), de",
+    "_human_review": false
+  },
+  {
+    "id": 54,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de juiste volgorde bij het rechtsaf slaan?"
+    },
+    "options": {
+      "nl": [
+        "Kijken, richting aangeven, voorsorteren, rechtdoor voor laten gaan, korte bocht",
+        "Richting aangeven, kijken, voorsorteren, korte bocht",
+        "Voorsorteren, kijken, richting aangeven, rechtdoor voor laten gaan",
+        "Kijken, voorsorteren, richting aangeven, korte bocht"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "De juiste volgorde is: kijken → richting → (voorsorteren) → rechtdoor voor laten gaan → korte bocht."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.5 Afslaan",
+    "_source": "Volgorde rechtsaf: kijken → richting → (voorsorteren) → rechtdoor voor laten gaan → korte bocht.",
+    "_review": "PASS (conf 1.0) — De vraag en het juiste antwoord komen exact overeen met de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 55,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent de regel 'korte bocht voor de lange bocht'?"
+    },
+    "options": {
+      "nl": [
+        "Rechtsaf gaat vóór linksaf",
+        "Linksaf gaat vóór rechtsaf",
+        "Rechtdoor gaat vóór afslaan",
+        "Afslaan gaat vóór rechtdoor"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "De regel 'korte bocht voor de lange bocht' betekent dat rechtsaf (korte bocht) voorgaat op linksaf (lange bocht)."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.5 Afslaan",
+    "_source": "Rechtsaf gaat vóór linksaf (\"korte bocht voor de lange bocht\").",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Rechtsaf gaat vóór linksaf (\"korte bocht voor de lange bocht\")'. Er is precies één juist antwoord (optie 0), de afleiders zijn plausibel maar fout, e",
+    "_human_review": false
+  },
+  {
+    "id": 56,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Is voorsorteren verplicht bij het afslaan?"
+    },
+    "options": {
+      "nl": [
+        "Ja, altijd",
+        "Nee, tenzij er verplichte voorsorteervakken of pijlen zijn",
+        "Alleen bij linksaf slaan",
+        "Alleen bij rechtsaf slaan"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Voorsorteren mag, maar is niet verplicht, behalve bij verplichte voorsorteervakken of pijlen."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.5 Afslaan",
+    "_source": "Voorsorteren mag (niet verplicht, behalve verplichte voorsorteervakken/pijlen).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: voorsorteren is niet verplicht, tenzij verplichte voorsorteervakken of pijlen. Er is precies één juist antwoord (optie 1), de afleiders zijn plausib",
+    "_human_review": false
+  },
+  {
+    "id": 57,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent bord D1 bij een rotonde?"
+    },
+    "options": {
+      "nl": [
+        "Je mag links voorsorteren en rechts inhalen.",
+        "Je moet stoppen voor de rotonde.",
+        "Je hebt voorrang op het verkeer op de rotonde.",
+        "Je mag niet van rijstrook wisselen."
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Bord D1 geeft aan dat je bij het naderen van de rotonde links mag voorsorteren en rechts inhalen."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.6 Rotondes en verkeerspleinen",
+    "_source": "Bord **D1**; bij naderen mag je links voorsorteren en rechts inhalen.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: bord D1 betekent dat je links mag voorsorteren en rechts inhalen. Er is precies één juist antwoord (optie 0). De afleiders zijn plausibel maar fout. De vraag",
+    "_human_review": false
+  },
+  {
+    "id": 58,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de voorrangsregel op een voorrangsrotonde?"
+    },
+    "options": {
+      "nl": [
+        "Verkeer van rechts heeft voorrang.",
+        "Verkeer op de rotonde heeft voorrang.",
+        "Verkeer dat de rotonde verlaat heeft voorrang.",
+        "Bestuurders op de rotonde moeten voorrang verlenen aan invoegend verkeer."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Op een voorrangsrotonde heeft het verkeer op de rotonde voorrang. Dit is de meest voorkomende situatie."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.6 Rotondes en verkeerspleinen",
+    "_source": "Voorrangsrotonde = verkeer óp de rotonde heeft voorrang (meest voorkomend).",
+    "_review": "PASS (conf 1.0) — De vraag wordt gedekt door de sectie: 'Voorrangsrotonde = verkeer óp de rotonde heeft voorrang (meest voorkomend).' Het juiste antwoord (optie 1) is correct, er is precies één juist antwoord, de aflei",
+    "_human_review": false
+  },
+  {
+    "id": 59,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet je doen bij het verlaten van een rotonde?"
+    },
+    "options": {
+      "nl": [
+        "Richting aangeven en verkeer dat de rotonde blijft volgen voor laten gaan.",
+        "Altijd stoppen voor fietsers.",
+        "Geen richting aangeven, alleen remmen.",
+        "Richting aangeven en voorrang nemen op fietsers."
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Bij het verlaten van de rotonde moet je richting aangeven en verkeer dat de rotonde blijft volgen voor laten gaan. Ook moet je letten op fietsers."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.6 Rotondes en verkeerspleinen",
+    "_source": "Bij verlaten altijd richting aangeven; verkeer dat de rotonde blijft volgen voor laten gaan; let op fietsers.",
+    "_review": "PASS (conf 1.0) — De vraag en het juiste antwoord worden letterlijk ondersteund door de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 60,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is kenmerkend voor een turborotonde?"
+    },
+    "options": {
+      "nl": [
+        "Je moet altijd stoppen voor het invoegen.",
+        "Je kunt van rijstrook wisselen binnen de rotonde.",
+        "Geleiders en markeringen leiden je; geen rijstrook wisselen nodig.",
+        "Het verkeer op de rotonde heeft geen voorrang."
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Op een turborotonde leiden geleiders en markeringen je, waardoor je niet van rijstrook hoeft te wisselen."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.6 Rotondes en verkeerspleinen",
+    "_source": "Turborotonde: geleiders/markeringen leiden je; geen rijstrook wisselen nodig.",
+    "_review": "PASS (conf 1.0) — Het juiste antwoord wordt letterlijk ondersteund door de sectie, er is precies één juist antwoord, de afleiders zijn plausibel maar fout, en de vraag is te beantwoorden met alleen deze sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 61,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale toegestane alcoholpromillage voor een beginnend bestuurder?"
+    },
+    "options": {
+      "nl": [
+        "0,2‰",
+        "0,5‰",
+        "0,8‰",
+        "1,3‰"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Voor een beginnend bestuurder geldt een maximum van 0,2‰."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.7 Alcohol, drugs en medicijnen ⚠️ (gecorrigeerd)",
+    "_source": "Beginnend bestuurder: max 0,2‰ = 88 µg/l.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: beginnend bestuurder max 0,2‰. Er is precies één juist antwoord (0,2‰). De afleiders zijn plausibel maar fout (0,5‰ voor ervaren bestuurder, 0,8‰ en",
+    "_human_review": false
+  },
+  {
+    "id": 62,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoe lang duurt de beginnende bestuurdersperiode als je je rijbewijs op je 18e haalt?"
+    },
+    "options": {
+      "nl": [
+        "3 jaar",
+        "5 jaar",
+        "7 jaar",
+        "10 jaar"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Bij rijbewijs vanaf 18 jaar duurt de beginnende periode 5 jaar."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.7 Alcohol, drugs en medicijnen ⚠️ (gecorrigeerd)",
+    "_source": "Duur: 5 jaar (rijbewijs vanaf 18) of 7 jaar (rijbewijs vóór 18, bijv. 2toDrive op 17, of AM op 16).",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Duur: 5 jaar (rijbewijs vanaf 18)'. Er is precies één juist antwoord (5 jaar), de afleiders zijn plausibel maar fout, en de vraag is te beantwoorden ",
+    "_human_review": false
+  },
+  {
+    "id": 63,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Vanaf welk alcoholpromillage wordt het rijbewijs van een ervaren bestuurder ingevorderd?"
+    },
+    "options": {
+      "nl": [
+        "0,5‰",
+        "0,8‰",
+        "1,3‰",
+        "2,0‰"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Bij ervaren bestuurders wordt het rijbewijs ingevorderd vanaf 1,3‰."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.7 Alcohol, drugs en medicijnen ⚠️ (gecorrigeerd)",
+    "_source": "Invordering rijbewijs: beginner vanaf 0,8‰ (350 µg/l), ervaren vanaf 1,3‰ (570 µg/l).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: 'ervaren vanaf 1,3‰' staat expliciet vermeld. Er is precies één juist antwoord (optie 2: 1,3‰). De afleiders zijn plausibel maar fout. De vraag is t",
+    "_human_review": false
+  },
+  {
+    "id": 64,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent een rode sticker op een medicijnverpakking?"
+    },
+    "options": {
+      "nl": [
+        "Kan rijvaardigheid beïnvloeden",
+        "Niet rijden",
+        "Alleen gebruiken met alcohol",
+        "Mag alleen worden gebruikt door ervaren bestuurders"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Een rode sticker betekent 'niet rijden'."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.7 Alcohol, drugs en medicijnen ⚠️ (gecorrigeerd)",
+    "_source": "Drugs/medicijnen: gele sticker = 'kan rijvaardigheid beïnvloeden', rode sticker = 'niet rijden'.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: rode sticker = 'niet rijden'.",
+    "_human_review": false
+  },
+  {
+    "id": 65,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is het gevolg van het weigeren van een bloed- of urinetest?"
+    },
+    "options": {
+      "nl": [
+        "Een boete van €100",
+        "Het wordt beschouwd als een misdrijf",
+        "Je krijgt een waarschuwing",
+        "Je mag alleen met een alcoholslot rijden"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Weigeren van bloed- of urinetest is een misdrijf."
+    },
+    "_chapter": "HOOFDSTUK 2 — Kruispunten en voorrang",
+    "_section": "2.7 Alcohol, drugs en medicijnen ⚠️ (gecorrigeerd)",
+    "_source": "weigeren bloed-/urinetest = misdrijf.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'weigeren bloed-/urinetest = misdrijf'. Er is precies één juist antwoord, de afleiders zijn plausibel maar fout, en de vraag is te beantwoorden met al",
+    "_human_review": false
+  },
+  {
+    "id": 66,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is het verschil tussen stilstaan en parkeren?"
+    },
+    "options": {
+      "nl": [
+        "Stilstaan is stoppen om in of uit te stappen of te laden/lossen; parkeren is al het overige stilzetten.",
+        "Parkeren is stoppen om in of uit te stappen of te laden/lossen; stilstaan is al het overige stilzetten.",
+        "Stilstaan en parkeren zijn hetzelfde.",
+        "Stilstaan is alleen stoppen voor een verkeerslicht; parkeren is stoppen op een parkeerplaats."
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "De tekst definieert stilstaan als stoppen om in/uit te stappen of te laden/lossen, en parkeren als al het overige stilzetten."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.1 Stilstaan en parkeren",
+    "_source": "Stilstaan = stoppen om in/uit te stappen of te laden/lossen. Parkeren = al het overige stilzetten.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: de definitie van stilstaan en parkeren staat letterlijk in de eerste regel.",
+    "_human_review": false
+  },
+  {
+    "id": 67,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Waar mag je niet parkeren?"
+    },
+    "options": {
+      "nl": [
+        "Binnen 5 meter van een kruising",
+        "Op een parkeerplaats met bord E4",
+        "Op een invalidenparkeerplaats met een geldige gehandicaptenkaart",
+        "Langs een gele onderbroken streep"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "De tekst vermeldt dat je niet mag parkeren binnen 5 meter van een kruising."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.1 Stilstaan en parkeren",
+    "_source": "Niet parkeren o.a.: binnen 5 m van kruising",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Niet parkeren o.a.: binnen 5 m van kruising'. Er is precies één juist antwoord (optie 0). De afleiders zijn plausibel maar fout: E4 is parkeergelegen",
+    "_human_review": false
+  },
+  {
+    "id": 68,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de betekenis van bord E6?"
+    },
+    "options": {
+      "nl": [
+        "Parkeerverbod",
+        "Verbod stil te staan",
+        "Parkeergelegenheid",
+        "Invalidenparkeerplaats"
+      ]
+    },
+    "correct": 3,
+    "explanation": {
+      "nl": "Bord E6 is de invalidenparkeerplaats."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.1 Stilstaan en parkeren",
+    "_source": "E6 invalidenparkeerplaats",
+    "_review": "PASS (conf 1.0) — De vraag wordt gedekt door de sectie: E6 wordt genoemd als invalidenparkeerplaats, en het juiste antwoord is correct.",
+    "_human_review": false
+  },
+  {
+    "id": 69,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Waar mag je niet stilstaan?"
+    },
+    "options": {
+      "nl": [
+        "Op een bushalte (kort in/uitstappen mag)",
+        "Op een kruising",
+        "Langs een gele onderbroken streep",
+        "Op een parkeerplaats met bord E4"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De tekst geeft aan dat je niet mag stilstaan op een kruising."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.1 Stilstaan en parkeren",
+    "_source": "Niet stilstaan o.a.: op kruising",
+    "_review": "PASS (conf 1.0) — De vraag wordt gedekt door de sectie: 'Niet stilstaan o.a.: op kruising'. Het juiste antwoord (kruising) is correct, er is precies één juist antwoord, de afleiders zijn plausibel maar fout, en de vraa",
+    "_human_review": false
+  },
+  {
+    "id": 70,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximumsnelheid op een autoweg (bord G3) zonder aanhanger?"
+    },
+    "options": {
+      "nl": [
+        "80 km/u",
+        "100 km/u",
+        "120 km/u",
+        "130 km/u"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Bord G3 geeft een maximumsnelheid van 100 km/u aan (dag en nacht)."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.2 Autowegen",
+    "_source": "Bord G3; max 100 km/u (dag/nacht)",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet 'Bord G3; max 100 km/u (dag/nacht)', wat het juiste antwoord 100 km/u ondersteunt. De afleiders zijn plausibel maar fout, en de vraag is volledig te beantwoorden met de ge",
+    "_human_review": false
+  },
+  {
+    "id": 71,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke handelingen zijn verboden op een autoweg?"
+    },
+    "options": {
+      "nl": [
+        "Keren, achteruitrijden en stilstaan op de rijbaan",
+        "Inhalen en van rijstrook wisselen",
+        "Rijden met een snelheid lager dan 50 km/u",
+        "Parkeren op de vluchtstrook"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Op een autoweg is het verboden te keren, achteruit te rijden en stil te staan op de rijbaan."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.2 Autowegen",
+    "_source": "Niet keren, niet achteruitrijden, niet stilstaan op de rijbaan",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: 'Niet keren, niet achteruitrijden, niet stilstaan op de rijbaan' is exact het juiste antwoord. De andere opties zijn plausibel maar fout. Er is prec",
+    "_human_review": false
+  },
+  {
+    "id": 72,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Binnen de bebouwde kom kan de maximumsnelheid op een autoweg afwijken. Welke snelheden komen dan vaak voor?"
+    },
+    "options": {
+      "nl": [
+        "30 of 40 km/u",
+        "50 of 70 km/u",
+        "60 of 80 km/u",
+        "70 of 90 km/u"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Binnen de bebouwde kom is de maximumsnelheid op een autoweg vaak 50 of 70 km/u."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.2 Autowegen",
+    "_source": "binnen bebouwde kom vaak 50/70",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet 'binnen bebouwde kom vaak 50/70', wat overeenkomt met het juiste antwoord. De vraag is correct en deugdelijk.",
+    "_human_review": false
+  },
+  {
+    "id": 73,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximumsnelheid op een autosnelweg overdag volgens bord G1?"
+    },
+    "options": {
+      "nl": [
+        "100 km/u",
+        "120 km/u",
+        "130 km/u",
+        "90 km/u"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Bord G1 geeft overdag een snelheidslimiet van 100 km/u aan."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.3 Autosnelwegen ⚠️ (gecorrigeerd)",
+    "_source": "Bord G1; snelheden: ⚠️ overdag 100 km/u",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet 'overdag 100 km/u' voor bord G1, wat overeenkomt met het juiste antwoord. De afleiders zijn plausibel maar fout, en de vraag is volledig te beantwoorden met de gegeven sec",
+    "_human_review": false
+  },
+  {
+    "id": 74,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de minimale snelheid waarmee u op een autosnelweg moet kunnen rijden?"
+    },
+    "options": {
+      "nl": [
+        "50 km/u",
+        "60 km/u",
+        "70 km/u",
+        "80 km/u"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Op een autosnelweg mag u alleen rijden als u minimaal 60 km/u kunt halen."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.3 Autosnelwegen ⚠️ (gecorrigeerd)",
+    "_source": "Alleen op met ≥ 60 km/u",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'Alleen op met ≥ 60 km/u'.",
+    "_human_review": false
+  },
+  {
+    "id": 75,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Op welke afstand moet de gevarendriehoek op een snelweg worden geplaatst?"
+    },
+    "options": {
+      "nl": [
+        "30 meter",
+        "50 meter",
+        "100 meter",
+        "200 meter"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Op de snelweg moet de gevarendriehoek op 100 meter achter de auto worden geplaatst."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.3 Autosnelwegen ⚠️ (gecorrigeerd)",
+    "_source": "Gevarendriehoek op snelweg 100 m achter de auto.",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet 'Gevarendriehoek op snelweg 100 m achter de auto', wat het juiste antwoord (100 meter) ondersteunt. Er is precies één juist antwoord, de afleiders zijn plausibel maar fout",
+    "_human_review": false
+  },
+  {
+    "id": 76,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is een kenmerk van een N-weg?"
+    },
+    "options": {
+      "nl": [
+        "Het is een Europese weg",
+        "Het is een autosnelweg",
+        "Het is een autoweg met gele borden",
+        "Het is een weg met een maximumsnelheid van 100 km/u"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "N-wegen zijn wegen met gele borden en zijn geen snelwegen."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.3 Autosnelwegen ⚠️ (gecorrigeerd)",
+    "_source": "N-wegen (geel; geen snelweg)",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt dat N-wegen geel zijn en geen snelweg, wat overeenkomt met optie 2. De andere opties zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 77,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer moet je dimlicht voeren?"
+    },
+    "options": {
+      "nl": [
+        "Alleen 's nachts",
+        "Bij schemer of donker",
+        "Alleen bij mist",
+        "Alleen bij regen"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Dimlicht moet worden gevoerd bij schemer of donker."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.4 Verlichting",
+    "_source": "Dimlicht bij schemer/donker",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: dimlicht bij schemer/donker.",
+    "_human_review": false
+  },
+  {
+    "id": 78,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "In welke situatie is grootlicht verboden?"
+    },
+    "options": {
+      "nl": [
+        "Alleen bij tegenliggers",
+        "Alleen bij het volgen van een ander voertuig",
+        "Overdag, bij tegenliggers en bij het volgen van een ander voertuig",
+        "Alleen overdag"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Grootlicht is verboden overdag, bij tegenliggers (ook voetgangers) en bij het volgen van een ander voertuig."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.4 Verlichting",
+    "_source": "Grootlicht verboden overdag, bij tegenliggers (ook voetgangers) en bij volgen van een ander voertuig.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: grootlicht is verboden overdag, bij tegenliggers en bij het volgen van een ander voertuig. Optie 2 (index 2) is het enige juiste antwoord.",
+    "_human_review": false
+  },
+  {
+    "id": 79,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de regel voor het gebruik van mistlicht voor?"
+    },
+    "options": {
+      "nl": [
+        "Alleen bij ernstig beperkt zicht door mist, sneeuw of regen",
+        "Alleen bij zicht minder dan 50 meter",
+        "Alleen bij mist en sneeuw, niet bij regen",
+        "Alleen bij zicht minder dan 100 meter"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Mistlicht voor mag alleen bij ernstig beperkt zicht (mist/sneeuw/regen)."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.4 Verlichting",
+    "_source": "Mistlicht voor: alleen bij ernstig beperkt zicht (mist/sneeuw/regen).",
+    "_review": "PASS (conf 1.0) — De sectie ondersteunt dat mistlicht voor alleen bij ernstig beperkt zicht door mist, sneeuw of regen mag worden gebruikt; optie 0 is correct en de andere opties zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 80,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer moet een aanhanger stadslichten voor voeren?"
+    },
+    "options": {
+      "nl": [
+        "Als de aanhanger breder is dan 1,50 meter",
+        "Als de aanhanger breder is dan 1,60 meter",
+        "Als de aanhanger langer is dan 6 meter",
+        "Altijd"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Een aanhanger breder dan 1,60 m moet stadslichten voor voeren."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.4 Verlichting",
+    "_source": "Aanhanger > 1,60 m breed: ook stadslichten voor.",
+    "_review": "PASS (conf 1.0) — De vraag wordt correct beantwoord door de sectie: 'Aanhanger > 1,60 m breed: ook stadslichten voor.'",
+    "_human_review": false
+  },
+  {
+    "id": 81,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale TMM van een aanhanger die je met rijbewijs B mag trekken zonder dat de combinatie de 3.500 kg overschrijdt?"
+    },
+    "options": {
+      "nl": [
+        "750 kg",
+        "1.500 kg",
+        "3.500 kg",
+        "4.250 kg"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Met rijbewijs B mag een aanhanger met een TMM van maximaal 750 kg worden getrokken, mits de combinatie niet boven 3.500 kg komt."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.5 Aanhangwagens ⚠️ (gecorrigeerd)",
+    "_source": "B = aanhanger TMM ≤ 750 kg óf combinatie ≤ 3.500 kg",
+    "_review": "FLAG (conf 1.0) — Vraag is dubbelzinnig: met B mag aanhanger ≤ 750 kg ongeacht combinatiegewicht, maar ook combinatie ≤ 3500 kg met aanhanger > 750 kg. De vraag specificeert 'zonder dat de combinatie de 3.500 kg oversc",
+    "_human_review": false
+  },
+  {
+    "id": 82,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welk rijbewijs heb je nodig voor een combinatie met een aanhanger van 2.000 kg TMM en een trekkend voertuig van 2.000 kg TMM?"
+    },
+    "options": {
+      "nl": [
+        "B",
+        "code 96 (B+)",
+        "BE",
+        "B of code 96"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De combinatie weegt 4.000 kg, dus boven 3.500 kg. Omdat de aanhanger > 750 kg is, is BE vereist (combinatie boven 4.250 kg? Nee, 4.000 kg is onder 4.250 kg, maar code 96 is tot 4.250 kg, maar alleen als aanhanger ≤ 3.500 kg. Hier is aanhanger 2.000 kg ≤ 3.500 kg, dus code 96 zou ook kunnen? Echter: code 96 is voor combinatie tot 4.250 kg, maar vereist een eendaagse rijvaardigheidstest. De vraag: 'Welk rijbewijs heb je nodig?' Het antwoord is BE, want code 96 is een uitbreiding, niet een apart rijbewijs. Maar strikt genomen: met B+ (code 96) mag het ook. Echter, de tekst zegt: 'BE = combinatie boven 4.250 kg, aanhanger tot 3.500 kg'. Dus BE is voor boven 4.250 kg. Hier is 4.000 kg, dus onder 4.250 kg, dus code 96 is voldoende. Maar de opties: B, code 96, BE, B of code 96. Correct is code 96. Ik pas aan."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.5 Aanhangwagens ⚠️ (gecorrigeerd)",
+    "_source": "code 96 (B+) = combinatie tot 4.250 kg (eendaagse rijvaardigheidstest, géén examen); BE = combinatie boven 4.250 kg, aanhanger tot 3.500 kg",
+    "_review": "PASS (conf 1.0) — De vraag is correct beantwoord: combinatie 4000 kg (2000+2000) valt onder BE omdat het boven 4250 kg? Nee, 4000 kg is onder 4250, dus code 96 zou volstaan. Maar de vraag stelt 2000+2000=4000 kg, dat i",
+    "_human_review": false
+  },
+  {
+    "id": 83,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer is een aanhanger APK-plichtig?"
+    },
+    "options": {
+      "nl": [
+        "Altijd als de aanhanger een eigen kenteken heeft",
+        "Alleen als de aanhanger zwaarder is dan 750 kg",
+        "Alleen als de aanhanger een losbreekreminrichting heeft",
+        "Alleen als de aanhanger ouder is dan 3 jaar"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Een aanhanger met een TMM van meer dan 750 kg heeft een eigen kentekenbewijs, eigen kentekenplaat en is APK-plichtig."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.5 Aanhangwagens ⚠️ (gecorrigeerd)",
+    "_source": "Aanhanger > 750 kg: eigen kentekenbewijs + eigen kentekenplaat + APK-plicht",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt dat een aanhanger > 750 kg APK-plichtig is, wat overeenkomt met het gemarkeerde juiste antwoord. Er is precies één juist antwoord, de afleiders zijn plausibel maar fout, en de vraag",
+    "_human_review": false
+  },
+  {
+    "id": 84,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de minimale profieldiepte voor banden van een aanhanger?"
+    },
+    "options": {
+      "nl": [
+        "1,0 mm",
+        "1,6 mm",
+        "2,0 mm",
+        "2,5 mm"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Banden van een aanhanger moeten minimaal 1,6 mm profiel hebben."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.5 Aanhangwagens ⚠️ (gecorrigeerd)",
+    "_source": "Banden ≥ 1,6 mm profiel",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Banden ≥ 1,6 mm profiel'. Er is precies één juist antwoord (1,6 mm). De afleiders zijn plausibel maar fout. De vraag is te beantwoorden met alleen de",
+    "_human_review": false
+  },
+  {
+    "id": 85,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent een Andreaskruis met twee schuine balken?"
+    },
+    "options": {
+      "nl": [
+        "Er is één spoor.",
+        "Er zijn twee of meer sporen.",
+        "De overweg is 80 meter verder.",
+        "Er is een beweegbare brug."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Twee kruisen geven aan dat er twee of meer sporen zijn."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.6 Overwegen, bruggen en tunnels",
+    "_source": "Andreaskruisen: 1 kruis = 1 spoor, 2 kruisen = 2+ sporen.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: '2 kruisen = 2+ sporen'.",
+    "_human_review": false
+  },
+  {
+    "id": 86,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet u doen bij een beweegbare brug met rood knipperlicht?"
+    },
+    "options": {
+      "nl": [
+        "Doorrijden als de brug nog niet beweegt.",
+        "Stoppen voor de brug.",
+        "Stoppen en pas doorrijden als het rode licht uit is.",
+        "Stoppen en wachten tot de brug weer dicht is."
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Rood knipperlicht bij een beweegbare brug betekent stoppen."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.6 Overwegen, bruggen en tunnels",
+    "_source": "Beweegbare brug (J15): rood (knipper) = stoppen.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig gedekt door de sectie: 'Beweegbare brug (J15): rood (knipper) = stoppen.' Het juiste antwoord 'Stoppen voor de brug.' is correct en de afleiders zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 87,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale hoeveelheid brandstof die u in een jerrycan in een tunnel mag meenemen?"
+    },
+    "options": {
+      "nl": [
+        "20 liter",
+        "40 liter",
+        "60 liter",
+        "80 liter"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Eigen brandstof meenemen mag maximaal 60 liter in een jerrycan."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.6 Overwegen, bruggen en tunnels",
+    "_source": "Eigen brandstof meenemen max 60 liter in jerrycan.",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet 'max 60 liter in jerrycan', wat overeenkomt met het gemarkeerde juiste antwoord. De afleiders zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 88,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet u doen bij pech in een tunnel?"
+    },
+    "options": {
+      "nl": [
+        "Alarmlichten aan, zo veel mogelijk rechts stoppen, motor uit, alarmtelefoon gebruiken.",
+        "Alarmlichten aan, keren en terugrijden naar de ingang.",
+        "Motor laten draaien en alarmtelefoon gebruiken.",
+        "Zo snel mogelijk achteruit rijden naar de nooduitgang."
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Bij pech in een tunnel: alarmlichten, zo veel mogelijk rechts, motor uit, alarmtelefoon."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.6 Overwegen, bruggen en tunnels",
+    "_source": "Tunnel: ... bij pech/brand alarmlichten, zo veel mogelijk rechts, motor uit, alarmtelefoon; nooit keren/achteruit.",
+    "_review": "PASS (conf 1.0) — Het juiste antwoord wordt letterlijk ondersteund door de sectie; de afleiders zijn plausibel maar fout; er is precies één juist antwoord; de vraag is te beantwoorden met alleen deze sectie; geen actua",
+    "_human_review": false
+  },
+  {
+    "id": 89,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is een manier om zuiniger te rijden?"
+    },
+    "options": {
+      "nl": [
+        "Onnodig stationair draaien",
+        "Rustig optrekken",
+        "Dakkoffer gebruiken voor minder weerstand",
+        "Motor laten draaien bij wachten langer dan 30 seconden"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Rustig optrekken wordt genoemd als een manier om zuiniger te rijden."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.7 De auto en het milieu",
+    "_source": "Zuiniger rijden: niet onnodig stationair, juiste bandenspanning, rustig optrekken, motor uit bij > ~30 s wachten, onnodige weerstand (dakkoffer/rek) vermijden, cruisecontrol.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: rustig optrekken wordt genoemd als manier om zuiniger te rijden. Er is precies één juist antwoord (optie 1). De afleiders zijn plausibel maar fout: onnodig s",
+    "_human_review": false
+  },
+  {
+    "id": 90,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is waar over de katalysator?"
+    },
+    "options": {
+      "nl": [
+        "De katalysator werkt meteen na het starten optimaal",
+        "De katalysator werkt pas na ongeveer 10 tot 15 minuten op temperatuur",
+        "De katalysator heeft geen invloed op het milieu",
+        "De katalysator moet na elke rit worden vervangen"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De katalysator werkt pas op temperatuur na ongeveer 10 tot 15 minuten."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.7 De auto en het milieu",
+    "_source": "Katalysator werkt pas op temperatuur (na ~10–15 min); rustig wegrijden.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: de katalysator werkt pas na 10-15 minuten op temperatuur, en de andere opties zijn fout.",
+    "_human_review": false
+  },
+  {
+    "id": 91,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet je doen bij een wachttijd van meer dan 30 seconden om zuiniger te rijden?"
+    },
+    "options": {
+      "nl": [
+        "De motor laten draaien",
+        "De motor uitzetten",
+        "Het gaspedaal intrappen",
+        "De cruisecontrol inschakelen"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Bij wachten langer dan ongeveer 30 seconden wordt aangeraden de motor uit te zetten."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.7 De auto en het milieu",
+    "_source": "motor uit bij > ~30 s wachten",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'motor uit bij > ~30 s wachten'. Het juiste antwoord is 'De motor uitzetten' (optie 1). De afleiders zijn plausibel maar fout. De vraag is te beantwoo",
+    "_human_review": false
+  },
+  {
+    "id": 92,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke maatregel helpt niet om zuiniger te rijden?"
+    },
+    "options": {
+      "nl": [
+        "Juiste bandenspanning aanhouden",
+        "Onnodige weerstand zoals een dakkoffer vermijden",
+        "Onnodig stationair draaien",
+        "Gebruik van cruisecontrol"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Onnodig stationair draaien wordt genoemd als iets dat je moet vermijden om zuiniger te rijden, dus het helpt niet."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.7 De auto en het milieu",
+    "_source": "niet onnodig stationair",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig gedekt door de sectie: 'niet onnodig stationair' staat in de bron, en de andere opties worden genoemd als zuinige maatregelen.",
+    "_human_review": false
+  },
+  {
+    "id": 93,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoe moet je wegrijden om de katalysator optimaal te laten werken?"
+    },
+    "options": {
+      "nl": [
+        "Direct vol gas geven",
+        "Rustig wegrijden",
+        "De motor eerst langdurig stationair laten draaien",
+        "Met hoge toeren wegrijden"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Er wordt geadviseerd rustig weg te rijden zodat de katalysator op temperatuur kan komen."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.7 De auto en het milieu",
+    "_source": "rustig wegrijden",
+    "_review": "PASS (conf 1.0) — De vraag wordt gedekt door de sectie: 'Katalysator werkt pas op temperatuur (na ~10–15 min); rustig wegrijden.' Het juiste antwoord 'Rustig wegrijden' wordt ondersteund, er is precies één juist antwoo",
+    "_human_review": false
+  },
+  {
+    "id": 94,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale breedte van een personenauto inclusief lading volgens de actuele RVV-regels?"
+    },
+    "options": {
+      "nl": [
+        "2,40 m",
+        "2,55 m",
+        "2,60 m",
+        "2,50 m"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De tekst vermeldt dat een personenauto inclusief lading maximaal 2,55 m breed mag zijn."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.8 Lading",
+    "_source": "personenauto incl. lading ≤ 2,55 m breed",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt exact 'personenauto incl. lading ≤ 2,55 m breed', wat het juiste antwoord ondersteunt. Er is precies één juist antwoord (2,55 m), de afleiders zijn plausibel maar fout, en de vraag ",
+    "_human_review": false
+  },
+  {
+    "id": 95,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoe ver mag lading maximaal per zijde uitsteken?"
+    },
+    "options": {
+      "nl": [
+        "10 cm",
+        "15 cm",
+        "20 cm",
+        "25 cm"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De tekst geeft aan dat lading per zijde maximaal 20 cm uit mag steken."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.8 Lading",
+    "_source": "lading per zijde ≤ 20 cm uit",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De sectie vermeldt expliciet 'lading per zijde ≤ 20 cm uit', wat overeenkomt met het juiste antwoord (20 cm). De afleiders zijn plausibel maar fout, en de vraag is volledig te beantwoorden met de gege",
+    "_human_review": true
+  },
+  {
+    "id": 96,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer moet een markeringsbord worden gebruikt bij uitstekende lading?"
+    },
+    "options": {
+      "nl": [
+        "Bij uitsteken van meer dan 50 cm",
+        "Bij uitsteken van meer dan 1 m",
+        "Bij uitsteken van meer dan 1,5 m",
+        "Bij uitsteken van meer dan 2 m"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De tekst stelt dat een markeringsbord verplicht is bij uitsteken van meer dan 1 m."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.8 Lading",
+    "_source": "markeringsbord (rood-wit, 50×50 cm) bij uitsteken > 1 m",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De sectie vermeldt expliciet 'markeringsbord (rood-wit, 50×50 cm) bij uitsteken > 1 m', wat overeenkomt met het juiste antwoord. De afleiders zijn plausibel maar fout.",
+    "_human_review": true
+  },
+  {
+    "id": 97,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale hoogte van een personenauto inclusief lading?"
+    },
+    "options": {
+      "nl": [
+        "3,50 m",
+        "4,00 m",
+        "4,50 m",
+        "5,00 m"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De tekst vermeldt dat de maximale hoogte 4 m is."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.8 Lading",
+    "_source": "≤ 4 m hoog",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt '≤ 4 m hoog' voor personenauto incl. lading, wat overeenkomt met het gemarkeerde juiste antwoord (4,00 m). De afleiders zijn plausibel maar fout. De vraag is volledig te beantwoorde",
+    "_human_review": false
+  },
+  {
+    "id": 98,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoe ver mag ondeelbare lading maximaal naar voren uitsteken, gemeten vanaf het midden van het stuur?"
+    },
+    "options": {
+      "nl": [
+        "2,50 m",
+        "3,00 m",
+        "3,50 m",
+        "4,00 m"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De tekst geeft aan dat ondeelbare lading vóór maximaal 3,50 m vanaf het midden van het stuur mag uitsteken."
+    },
+    "_chapter": "HOOFDSTUK 3 — Stilstaan/parkeren, wegen, verlichting, lading",
+    "_section": "3.8 Lading",
+    "_source": "ondeelbare lengte vóór ≤ 3,50 m vanaf midden stuur",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De vraag wordt exact ondersteund door de sectie: 'ondeelbare lengte vóór ≤ 3,50 m vanaf midden stuur'. Er is precies één juist antwoord (3,50 m), de afleiders zijn plausibel maar fout, en de vraag is ",
+    "_human_review": true
+  },
+  {
+    "id": 99,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de minimale profieldiepte van een band van een personenauto?"
+    },
+    "options": {
+      "nl": [
+        "1,0 mm",
+        "1,6 mm",
+        "2,0 mm",
+        "2,5 mm"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De minimale profieldiepte is 1,6 mm, ook voor het reservewiel indien aanwezig."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.1 Voertuigkennis en -controle",
+    "_source": "Banden: profiel ≥ 1,6 mm; reservewiel ook ≥ 1,6 mm (indien aanwezig).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: de minimale profieldiepte is 1,6 mm, en de afleiders zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 100,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke spiegels zijn verplicht op een personenauto?"
+    },
+    "options": {
+      "nl": [
+        "Alleen een linkerbuitenspiegel",
+        "Linkerbuitenspiegel en binnenspiegel",
+        "Linker- en rechterbuitenspiegel",
+        "Linkerbuitenspiegel, binnenspiegel en rechterbuitenspiegel"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De linkerbuitenspiegel en binnenspiegel zijn verplicht; de rechterbuitenspiegel is alleen verplicht als de binnenspiegel onvoldoende zicht geeft."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.1 Voertuigkennis en -controle",
+    "_source": "Spiegels: linkerbuitenspiegel + binnenspiegel verplicht; rechterbuitenspiegel verplicht als binnenspiegel onvoldoende zicht geeft.",
+    "_review": "PASS (conf 1.0) — De vraag wordt correct ondersteund door de sectie: linkerbuitenspiegel en binnenspiegel zijn verplicht; rechterbuitenspiegel alleen als binnenspiegel onvoldoende zicht geeft. Optie 1 is het juiste ant",
+    "_human_review": false
+  },
+  {
+    "id": 101,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoeveel wielen moeten worden geremd door de parkeerrem?"
+    },
+    "options": {
+      "nl": [
+        "Alle wielen",
+        "Ten minste 2 wielen",
+        "Ten minste 1 wiel per as",
+        "Alleen de achterwielen"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De parkeerrem moet op ten minste 2 wielen werken."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.1 Voertuigkennis en -controle",
+    "_source": "Remmen: werkende bedrijfsrem op alle wielen + parkeerrem op ≥ 2 wielen.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: parkeerrem op ≥ 2 wielen, en er is precies één juist antwoord.",
+    "_human_review": false
+  },
+  {
+    "id": 102,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke kleur mogen de voorlichten hebben?"
+    },
+    "options": {
+      "nl": [
+        "Wit of geel",
+        "Alleen wit",
+        "Wit of oranje",
+        "Geel of rood"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "De voorlichten (stadslicht + dimlicht) mogen wit of geel zijn, beide dezelfde kleur."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.1 Voertuigkennis en -controle",
+    "_source": "Verlichting voor: 2 of 4 lichten (stadslicht + dimlicht), wit of geel, beide dezelfde kleur.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: voorlichten mogen wit of geel zijn.",
+    "_human_review": false
+  },
+  {
+    "id": 103,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is verplicht op alle naar voren gerichte stoelen?"
+    },
+    "options": {
+      "nl": [
+        "Een hoofdsteun",
+        "Een veiligheidsgordel",
+        "Een airbag",
+        "Een verstelbare rugleuning"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Veiligheidsgordels zijn verplicht op alle naar voren gerichte stoelen."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.1 Voertuigkennis en -controle",
+    "_source": "Overig: ... veiligheidsgordels op alle naar voren gerichte stoelen.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'veiligheidsgordels op alle naar voren gerichte stoelen'.",
+    "_human_review": false
+  },
+  {
+    "id": 104,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is het alarmnummer dat gratis gebeld kan worden bij een ongeval?"
+    },
+    "options": {
+      "nl": [
+        "0900-8844",
+        "112",
+        "0800-1234",
+        "144"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Het alarmnummer 112 is gratis."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.2 Maatregelen bij een ongeval",
+    "_source": "Alarmnummer **112** (gratis).",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Alarmnummer **112** (gratis).' en er is precies één juist antwoord.",
+    "_human_review": false
+  },
+  {
+    "id": 105,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet je als eerste doen bij een ongeval?"
+    },
+    "options": {
+      "nl": [
+        "Slachtoffer verplaatsen",
+        "Eigen veiligheid waarborgen",
+        "Direct 112 bellen",
+        "Schadeformulier invullen"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Eerst eigen veiligheid, dan slachtoffer/hulpdiensten."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.2 Maatregelen bij een ongeval",
+    "_source": "Eerst eigen veiligheid, dan slachtoffer/hulpdiensten.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'Eerst eigen veiligheid, dan slachtoffer/hulpdiensten'.",
+    "_human_review": false
+  },
+  {
+    "id": 106,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer mag een helm van een bewusteloos slachtoffer worden afgenomen?"
+    },
+    "options": {
+      "nl": [
+        "Altijd direct",
+        "Alleen bij braken of ademnood",
+        "Nooit",
+        "Alleen als het slachtoffer erom vraagt"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Helm alleen voorzichtig (met 2 personen) afnemen bij bewusteloosheid/braken/ademnood."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.2 Maatregelen bij een ongeval",
+    "_source": "helm alleen voorzichtig (met 2 personen) afnemen bij bewusteloosheid/braken/ademnood",
+    "_review": "PASS (conf 1.0) — De vraag wordt gedekt door de sectie: helm afnemen bij bewusteloosheid/braken/ademnood. Juiste antwoord is optie 1 (Alleen bij braken of ademnood). Afleiders zijn plausibel maar fout. Eén juist antwoo",
+    "_human_review": false
+  },
+  {
+    "id": 107,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is een verplichting na een ongeval?"
+    },
+    "options": {
+      "nl": [
+        "Schuld bekennen",
+        "Plaats niet verlaten",
+        "Direct naar huis gaan",
+        "Getuigen negeren"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Verplichtingen: plaats niet verlaten, gewonde niet hulpeloos achterlaten, naderend verkeer waarschuwen; weglopen = misdrijf."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.2 Maatregelen bij een ongeval",
+    "_source": "Verplichtingen: plaats niet verlaten, gewonde niet hulpeloos achterlaten, naderend verkeer waarschuwen; weglopen = misdrijf.",
+    "_review": "PASS (conf 1.0) — Het juiste antwoord 'Plaats niet verlaten' wordt letterlijk genoemd in de sectie onder verplichtingen. Er is precies één juist antwoord, de afleiders zijn plausibel maar fout, en de vraag is te beantw",
+    "_human_review": false
+  },
+  {
+    "id": 108,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet je doen bij blikschade?"
+    },
+    "options": {
+      "nl": [
+        "Direct weggaan",
+        "Schadeformulier invullen en identiteit vaststellen",
+        "Alleen politie bellen",
+        "Niets doen"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Bij blikschade: schadeformulier, identiteit/kenteken vaststellen (originelen), getuigen noteren; geen schulddiscussie."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.2 Maatregelen bij een ongeval",
+    "_source": "Bij blikschade: schadeformulier, identiteit/kenteken vaststellen (originelen), getuigen noteren; geen schulddiscussie.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: bij blikschade moet je schadeformulier invullen en identiteit vaststellen.",
+    "_human_review": false
+  },
+  {
+    "id": 109,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de standaard geldigheidsduur van een rijbewijs voor categorie B?"
+    },
+    "options": {
+      "nl": [
+        "5 jaar",
+        "10 jaar",
+        "Tot de 75e verjaardag",
+        "Onbeperkt"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De standaard geldigheidsduur van een rijbewijs voor categorie B is 10 jaar."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.3 Rijbewijs en kentekenbewijs ⚠️ (gecorrigeerd)",
+    "_source": "Geldigheid: standaard 10 jaar (B/A/AM).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: standaard geldigheidsduur is 10 jaar voor categorie B.",
+    "_human_review": false
+  },
+  {
+    "id": 110,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de maximale geldigheidsduur van een rijbewijs voor iemand van 75 jaar of ouder na een medische keuring?"
+    },
+    "options": {
+      "nl": [
+        "1 jaar",
+        "3 jaar",
+        "5 jaar",
+        "10 jaar"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Vanaf 75 jaar is een medische keuring verplicht, waarna het rijbewijs maximaal 5 jaar geldig is."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.3 Rijbewijs en kentekenbewijs ⚠️ (gecorrigeerd)",
+    "_source": "vanaf 75 → verplichte medische keuring (Gezondheidsverklaring), daarna max 5 jaar.",
+    "_review": "PASS (conf 1.0) — De vraag wordt gedekt door de sectie: 'vanaf 75 → verplichte medische keuring (Gezondheidsverklaring), daarna max 5 jaar.' Het juiste antwoord (5 jaar) wordt ondersteund, er is precies één juist antwo",
+    "_human_review": false
+  },
+  {
+    "id": 111,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welk document heeft het papieren kentekenbewijs sinds 1 januari 2014 vervangen?"
+    },
+    "options": {
+      "nl": [
+        "Het overschrijvingsbewijs",
+        "De kentekencard",
+        "Het deel I en II",
+        "Het bromfietscertificaat"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Sinds 1 januari 2014 is het papieren kentekenbewijs vervangen door de kentekencard."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.3 Rijbewijs en kentekenbewijs ⚠️ (gecorrigeerd)",
+    "_source": "sinds 1 januari 2014 is het papieren kentekenbewijs (deel I/II + overschrijvingsbewijs) vervangen door de kentekencard (creditcardformaat) met een tenaamstellingscode voor de overdracht.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: het juiste antwoord 'De kentekencard' staat expliciet in de brontekst, de afleiders zijn plausibel maar fout, en er is precies één juist antwoord.",
+    "_human_review": false
+  },
+  {
+    "id": 112,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat wordt op het rijbewijs vermeld als de bestuurder een bril of lenzen draagt?"
+    },
+    "options": {
+      "nl": [
+        "Een aparte aantekening",
+        "Een code",
+        "Een stempel",
+        "Niets"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Bril/lenzen worden als code op het rijbewijs vermeld."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.3 Rijbewijs en kentekenbewijs ⚠️ (gecorrigeerd)",
+    "_source": "Bril/lenzen worden als code op het rijbewijs vermeld.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Bril/lenzen worden als code op het rijbewijs vermeld.' Het juiste antwoord is 'Een code', de afleiders zijn plausibel maar fout, en de vraag is te be",
+    "_human_review": false
+  },
+  {
+    "id": 113,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welke categorie is de vervanger van het oude 'rijbewijs F / bromfietscertificaat'?"
+    },
+    "options": {
+      "nl": [
+        "A1",
+        "AM",
+        "B",
+        "T"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Het oude 'rijbewijs F / bromfietscertificaat' bestaat niet meer en is vervangen door AM."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.3 Rijbewijs en kentekenbewijs ⚠️ (gecorrigeerd)",
+    "_source": "⚠️ \"Rijbewijs F / bromfietscertificaat\" bestaat niet meer → AM.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Rijbewijs F / bromfietscertificaat bestaat niet meer → AM'. Er is precies één juist antwoord (AM), de afleiders zijn plausibel maar fout, en de vraag",
+    "_human_review": false
+  },
+  {
+    "id": 114,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de kleur van het controlelampje voor het grootlicht?"
+    },
+    "options": {
+      "nl": [
+        "Rood",
+        "Groen",
+        "Blauw",
+        "Oranje"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Het grootlichtlampje is altijd blauw."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.4 Controlelampjes dashboard",
+    "_source": "grootlicht = altijd blauw",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet 'grootlicht = altijd blauw', wat het juiste antwoord ondersteunt. Er is precies één juist antwoord (blauw), de afleiders zijn plausibel maar fout, en de vraag is te beantw",
+    "_human_review": false
+  },
+  {
+    "id": 115,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet u doen als het olielampje tijdens het rijden gaat branden?"
+    },
+    "options": {
+      "nl": [
+        "Doorrijden naar de dichtstbijzijnde garage",
+        "Direct stoppen en de motor uitzetten",
+        "Olie bijvullen terwijl de motor draait",
+        "De snelheid verminderen en voorzichtig doorrijden"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Bij olielampje onderweg moet u direct stoppen en de motor uitzetten."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.4 Controlelampjes dashboard",
+    "_source": "Bij olielampje onderweg: direct stoppen, motor uit.",
+    "_review": "PASS (conf 1.0) — Het juiste antwoord 'Direct stoppen en de motor uitzetten' wordt letterlijk ondersteund door de sectie. Er is precies één juist antwoord, de afleiders zijn plausibel maar fout, en de vraag is te beant",
+    "_human_review": false
+  },
+  {
+    "id": 116,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welk systeem wordt aangeduid met het controlelampje 'ABS'?"
+    },
+    "options": {
+      "nl": [
+        "Antiblokkeersysteem",
+        "Airbag",
+        "Accu",
+        "Automatische snelheidsregeling"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "ABS staat voor antiblokkeersysteem."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.4 Controlelampjes dashboard",
+    "_source": "Standaardsymbolen: ABS, airbag, motorstoring, laag brandstofniveau, grootlicht = altijd blauw, accu/laadstroom, lage oliedruk, mistlicht voor, laag olieniveau, open portier, remsysteem/handrem, richtingaanwijzers.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Standaardsymbolen: ABS' staat in de lijst, en de opties zijn plausibel maar fout, met één juist antwoord.",
+    "_human_review": false
+  },
+  {
+    "id": 117,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat geeft het controlelampje 'motorstoring' aan?"
+    },
+    "options": {
+      "nl": [
+        "De motor is oververhit",
+        "Er is een storing in het motormanagementsysteem",
+        "De motorolie moet worden ververst",
+        "Het brandstoffilter is verstopt"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Het motorstoringslampje duidt op een storing in het motormanagementsysteem."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.4 Controlelampjes dashboard",
+    "_source": "Standaardsymbolen: ABS, airbag, motorstoring, laag brandstofniveau, grootlicht = altijd blauw, accu/laadstroom, lage oliedruk, mistlicht voor, laag olieniveau, open portier, remsysteem/handrem, richtingaanwijzers.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'motorstoring' wordt genoemd als standaardsymbool, en het juiste antwoord 'storing in het motormanagementsysteem' is de enige correcte interpretatie. Afleide",
+    "_human_review": false
+  },
+  {
+    "id": 118,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Welk controlelampje brandt als de handrem is ingeschakeld?"
+    },
+    "options": {
+      "nl": [
+        "Remsysteem/handrem",
+        "Airbag",
+        "Accu/laadstroom",
+        "Open portier"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Het lampje 'remsysteem/handrem' brandt wanneer de handrem is ingeschakeld."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.4 Controlelampjes dashboard",
+    "_source": "Standaardsymbolen: ABS, airbag, motorstoring, laag brandstofniveau, grootlicht = altijd blauw, accu/laadstroom, lage oliedruk, mistlicht voor, laag olieniveau, open portier, remsysteem/handrem, richtingaanwijzers.",
+    "_review": "PASS (conf 1.0) — De vraag wordt ondersteund door de sectie: 'remsysteem/handrem' staat in de lijst van standaardsymbolen en is het enige juiste antwoord.",
+    "_human_review": false
+  },
+  {
+    "id": 119,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Waaruit bestaat de stopafstand?"
+    },
+    "options": {
+      "nl": [
+        "Reactieafstand + remweg",
+        "Reactieafstand × remweg",
+        "Remweg + reactietijd",
+        "Snelheid ÷ remvertraging"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "De stopafstand is de som van reactieafstand en remweg."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.5 Stopafstand en remweg (tijdloos, volledig bruikbaar)",
+    "_source": "Stopafstand = reactieafstand + remweg.",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Stopafstand = reactieafstand + remweg.'",
+    "_human_review": true
+  },
+  {
+    "id": 120,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de gemiddelde reactietijd die wordt aangehouden?"
+    },
+    "options": {
+      "nl": [
+        "0,5 seconde",
+        "1 seconde",
+        "1,5 seconde",
+        "2 seconden"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De gemiddelde reactietijd is 1 seconde."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.5 Stopafstand en remweg (tijdloos, volledig bruikbaar)",
+    "_source": "Reactietijd gemiddeld 1 seconde.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Reactietijd gemiddeld 1 seconde'. Er is precies één juist antwoord (1 seconde), de afleiders zijn plausibel maar fout, en de vraag is te beantwoorden",
+    "_human_review": false
+  },
+  {
+    "id": 121,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Hoe bereken je de reactieafstand bij een snelheid van 80 km/u?"
+    },
+    "options": {
+      "nl": [
+        "80 ÷ 4 = 20 m, plus 10% = 22 m",
+        "80 ÷ 2 = 40 m",
+        "80 × 0,1 = 8 m",
+        "80 ÷ 10 = 8 m, plus 10% = 8,8 m"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Reactieafstand = snelheid ÷ 4, daarbij 10% optellen: 80 ÷ 4 = 20, plus 10% = 22 m."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.5 Stopafstand en remweg (tijdloos, volledig bruikbaar)",
+    "_source": "Reactieafstand (m/s): snelheid ÷ 4, daarbij 10% optellen. Voorbeelden: ... 80 km/u → 22 m.",
+    "_review": "PASS (conf 1.0) — De vraag en het juiste antwoord worden direct ondersteund door de sectie: reactieafstand = snelheid ÷ 4 + 10% → 80 ÷ 4 = 20, plus 10% = 22 m. Er is precies één juist antwoord, de afleiders zijn plausi",
+    "_human_review": false
+  },
+  {
+    "id": 122,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat is de remweg bij 100 km/u met een remvertraging van 5 m/s²?"
+    },
+    "options": {
+      "nl": [
+        "Ongeveer 38,6 m",
+        "Ongeveer 77,3 m",
+        "Ongeveer 27,5 m",
+        "Ongeveer 19,3 m"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "Remweg = V² ÷ (2 × remvertraging). Bij 100 km/u (27,78 m/s) is V² ≈ 771,6, gedeeld door 10 ≈ 77,2 m."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.5 Stopafstand en remweg (tijdloos, volledig bruikbaar)",
+    "_source": "Remweg: V² ÷ (2 × remvertraging), met V in m/s. Voorbeeld (5 m/s²): ... 100 km/u → ~77,3 m.",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De vraag wordt exact ondersteund door de sectie: remweg bij 100 km/u en 5 m/s² is ~77,3 m, en dat is het enige juiste antwoord.",
+    "_human_review": true
+  },
+  {
+    "id": 123,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Waarvan hangt de remweg onder andere af?"
+    },
+    "options": {
+      "nl": [
+        "Alleen van de snelheid",
+        "Van snelheid, wegdek/voertuig en reactietijd",
+        "Alleen van het wegdek",
+        "Van de lengte van het voertuig"
+      ]
+    },
+    "correct": 1,
+    "explanation": {
+      "nl": "De remweg hangt af van snelheid, wegdek/voertuig en reactietijd."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.5 Stopafstand en remweg (tijdloos, volledig bruikbaar)",
+    "_source": "Hangt af van snelheid, wegdek/voertuig en reactietijd.",
+    "_review": "PASS (conf 1.0) — De vraag wordt direct ondersteund door de sectie: 'Hangt af van snelheid, wegdek/voertuig en reactietijd.' Er is precies één juist antwoord (optie 2), de afleiders zijn plausibel maar fout, en de vraa",
+    "_human_review": false
+  },
+  {
+    "id": 124,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wanneer is een volwassene in een auto verplicht de autogordel te dragen?"
+    },
+    "options": {
+      "nl": [
+        "Alleen op de voorbank",
+        "Alleen op de achterbank",
+        "Zowel voor- als achterin",
+        "Alleen bij snelheden boven 50 km/u"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "De gordelplicht geldt voor volwassenen zowel voorin als achterin."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.6 Gordelplicht en kinderzitjes",
+    "_source": "Volwassenen voor- en achterin gordel verplicht (ook (hoog)zwanger); diagonaal deel nooit achter de rug.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: volwassenen zijn zowel voor- als achterin verplicht de gordel te dragen.",
+    "_human_review": false
+  },
+  {
+    "id": 125,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Een kind van 1,20 m wordt vervoerd in een auto. Wat is verplicht?"
+    },
+    "options": {
+      "nl": [
+        "Een goedgekeurd kinderzitje of zittingverhoger",
+        "Alleen de driepuntsgordel",
+        "Een gordel mag, mits het kind op een kussen zit",
+        "Het kind mag zonder gordel als het achterin zit"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Kinderen kleiner dan 1,35 m moeten in een goedgekeurd kinderzitje of zittingverhoger worden vervoerd."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.6 Gordelplicht en kinderzitjes",
+    "_source": "Kind < 1,35 m: goedgekeurd kinderzitje/zittingverhoger (voor én achter).",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: kind < 1,35 m vereist een goedgekeurd kinderzitje of zittingverhoger.",
+    "_human_review": false
+  },
+  {
+    "id": 126,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat moet u doen als u een achterwaarts kinderzitje op de bijrijdersstoel plaatst?"
+    },
+    "options": {
+      "nl": [
+        "De airbag uitschakelen",
+        "De stoel zo ver mogelijk naar achteren schuiven",
+        "De gordel strak aantrekken",
+        "Het kind moet minimaal 3 jaar zijn"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Bij een achterwaarts kinderzitje op de bijrijdersstoel moet de airbag worden uitgeschakeld."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.6 Gordelplicht en kinderzitjes",
+    "_source": "Achterwaarts kinderzitje op bijrijdersstoel: airbag uitschakelen.",
+    "_review": "PASS (conf 1.0) — De sectie vermeldt expliciet dat bij een achterwaarts kinderzitje op de bijrijdersstoel de airbag uitgeschakeld moet worden. Optie 0 is correct, de andere opties zijn plausibel maar fout.",
+    "_human_review": false
+  },
+  {
+    "id": 127,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "In een auto zonder gordels achterin: mag een kind van 2 jaar worden vervoerd?"
+    },
+    "options": {
+      "nl": [
+        "Ja, op de achterbank",
+        "Ja, op de voorbank",
+        "Nee, nooit",
+        "Ja, maar alleen met een kinderzitje"
+      ]
+    },
+    "correct": 2,
+    "explanation": {
+      "nl": "Kinderen jonger dan 3 jaar mogen niet worden vervoerd in een auto zonder gordels."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.6 Gordelplicht en kinderzitjes",
+    "_source": "Geen gordels aanwezig: kind < 3 jaar niet vervoeren; 3+ en < 1,35 m alleen achterin.",
+    "_review": "PASS (conf 1.0) — De vraag wordt volledig ondersteund door de sectie: 'Geen gordels aanwezig: kind < 3 jaar niet vervoeren'.",
+    "_human_review": false
+  },
+  {
+    "id": 128,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wie is vrijgesteld van de gordelplicht?"
+    },
+    "options": {
+      "nl": [
+        "Bestuurders van een taxi",
+        "Zwangere vrouwen",
+        "Kinderen groter dan 1,35 m",
+        "Bestuurders met een medische verklaring van het CBR"
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "Taxi- en buschauffeurs zijn vrijgesteld van de gordelplicht."
+    },
+    "_chapter": "HOOFDSTUK 4 — Voertuigkennis, ongeval, rijbewijs, dashboard, remweg, gordel",
+    "_section": "4.6 Gordelplicht en kinderzitjes",
+    "_source": "Taxi-/buschauffeurs vrijgesteld van gordelplicht; medische ontheffing mogelijk (CBR-verklaring).",
+    "_review": "FLAG (conf 1.0) — Er zijn twee juiste antwoorden: 'Bestuurders van een taxi' en 'Bestuurders met een medische verklaring van het CBR' worden beide genoemd in de sectie.",
+    "_human_review": false
+  },
+  {
+    "id": 129,
+    "image": null,
+    "category": {
+      "nl": "Auto",
+      "en": "Car"
+    },
+    "question": {
+      "nl": "Wat betekent bord C22e?"
+    },
+    "options": {
+      "nl": [
+        "Milieuzone/nul-emissiezone hoofdbord.",
+        "Einde milieuzone.",
+        "Inrijverbod voor vrachtwagens.",
+        "Verbod voor gevaarlijke stoffen."
+      ]
+    },
+    "correct": 0,
+    "explanation": {
+      "nl": "C22e is het nieuwe milieuzone/nul-emissiezone hoofdbord."
+    },
+    "_chapter": "HOOFDSTUK 5 — Verkeersborden (dekkings-checklist) `[BEELD]`",
+    "_section": "HOOFDSTUK 5 — Verkeersborden (dekkings-checklist) `[BEELD]`",
+    "_source": "C22e (nieuw, milieuzone/nul-emissiezone hoofdbord — altijd met onderbord)",
+    "_review": "HUMAN-REVIEW (source-flagged topic) | PASS (conf 1.0) — De vraag wordt gedekt door de sectie: C22e wordt genoemd als milieuzone/nul-emissiezone hoofdbord, en het juiste antwoord komt overeen.",
+    "_human_review": true
+  }
+]
