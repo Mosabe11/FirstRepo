@@ -38,8 +38,11 @@ def submit_order(asset_class: str, exchange_symbol: str,
         return {"filled": False, "fill_price": 0, "fee": 0,
                 "error": "qty must be > 0"}
     fill_price = expected_price * _slippage_factor(direction)
-    # taker fee approximation (MEXC ~0.2%)
-    fee = abs(fill_price * quantity) * 0.0002
+    # Taker fee per side. MEXC/Binance spot taker is ~0.05%-0.10%; we use a
+    # conservative 0.075% (7.5 bps) to match the research backtester so paper
+    # results are not rosier than the validated numbers. This fee is now
+    # actually subtracted from PnL in execution/manager.py.
+    fee = abs(fill_price * quantity) * 0.00075
     logger.info(
         f"[PAPER] {direction} {quantity} {exchange_symbol} "
         f"@ {fill_price:.6f} (expected {expected_price:.6f})"

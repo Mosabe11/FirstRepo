@@ -174,6 +174,57 @@ def atr(high: np.ndarray, low: np.ndarray, close: np.ndarray,
     return out
 
 
+def adx(high: np.ndarray, low: np.ndarray, close: np.ndarray,
+        period: int = 14) -> np.ndarray:
+    """
+    Average Directional Index (Wilder). Measures TREND STRENGTH (not direction).
+    Used as the regime filter for the trend strategy: ADX >= ~22 means a real
+    trend is present; below that the market is chopping and momentum signals
+    bleed. Returns an array aligned to the input (NaN during warm-up).
+    """
+    high = np.asarray(high, dtype=float)
+    low = np.asarray(low, dtype=float)
+    close = np.asarray(close, dtype=float)
+    n = len(close)
+    out = np.full(n, np.nan)
+    if n < 2 * period:
+        return out
+
+    up = high[1:] - high[:-1]
+    dn = low[:-1] - low[1:]
+    plus_dm = np.where((up > dn) & (up > 0), up, 0.0)
+    minus_dm = np.where((dn > up) & (dn > 0), dn, 0.0)
+    prev_close = close[:-1]
+    tr = np.maximum.reduce([
+        high[1:] - low[1:],
+        np.abs(high[1:] - prev_close),
+        np.abs(low[1:] - prev_close),
+    ])
+
+    def _wilder(x):
+        s = np.full(len(x), np.nan)
+        s[period - 1] = x[:period].sum()
+        for i in range(period, len(x)):
+            s[i] = s[i - 1] - s[i - 1] / period + x[i]
+        return s
+
+    atr_sm = _wilder(tr)
+    with np.errstate(divide="ignore", invalid="ignore"):
+        pdi = 100 * _wilder(plus_dm) / atr_sm
+        mdi = 100 * _wilder(minus_dm) / atr_sm
+        denom = pdi + mdi
+        dx = 100 * np.abs(pdi - mdi) / np.where(denom == 0, np.nan, denom)
+
+    adx_vals = np.full(len(dx), np.nan)
+    first = 2 * period - 2
+    if first < len(dx):
+        adx_vals[first] = np.nanmean(dx[period - 1:first + 1])
+        for i in range(first + 1, len(dx)):
+            adx_vals[i] = (adx_vals[i - 1] * (period - 1) + dx[i]) / period
+    out[1:] = adx_vals  # dx/adx are computed on diffs (len n-1) -> shift by 1
+    return out
+
+
 def bollinger_bands(values: np.ndarray, period: int = 20,
                     std_mult: float = 2.0) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Returns (upper, middle, lower)."""

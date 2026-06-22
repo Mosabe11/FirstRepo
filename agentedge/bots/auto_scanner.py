@@ -49,12 +49,19 @@ class AutoScannerBot:
                 return
             if position_manager.has_position_on(cfg.symbol):
                 continue
-            candles = market_data.fetch_ohlcv(
-                cfg.asset_class, cfg.exchange_symbol, "1h", 100
-            )
-            if not candles:
-                continue
+            # Fetch candles at EACH strategy's own timeframe (swing_1h -> 1h,
+            # regime_trend -> 1d). Cache per timeframe within this asset's tick.
+            candles_by_tf: dict[str, list] = {}
             for strat in swing_strategies:
+                tf = getattr(strat, "timeframe", "1h")
+                if tf not in candles_by_tf:
+                    need = max(getattr(strat, "min_candles", 100) + 20, 100)
+                    candles_by_tf[tf] = market_data.fetch_ohlcv(
+                        cfg.asset_class, cfg.exchange_symbol, tf, need
+                    )
+                candles = candles_by_tf[tf]
+                if not candles:
+                    continue
                 try:
                     signal = strat.evaluate(cfg.symbol, candles)
                 except Exception as e:

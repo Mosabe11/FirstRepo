@@ -62,6 +62,12 @@ WEEKLY_LIMIT: float = _float("WEEKLY_LIMIT", 3000)
 MAX_PRICE_DRIFT: float = _float("MAX_PRICE_DRIFT", 0.02)  # 2%
 PAPER_STARTING_BALANCE: float = _float("PAPER_STARTING_BALANCE", 10000)
 
+# Risk-based sizing: dollar-risk per trade is a fixed fraction of equity, so a
+# few large-notional losers can't erase many small winners. Size is derived from
+# the stop distance, NOT a fixed quantity. (quant-trading-backtesting skill)
+RISK_FRACTION: float = _float("RISK_FRACTION", 0.005)   # 0.5% of equity risked per trade
+RISK_EQUITY: float = _float("RISK_EQUITY", 10000)       # equity base for sizing (paper)
+
 # Default TP/SL percentages by asset class
 DEFAULT_TP_PCT = 0.015  # 1.5%
 DEFAULT_SL_PCT = 0.008  # 0.8%
@@ -75,18 +81,28 @@ TRIGGER_COOLDOWN_IF_OPEN = 180
 
 # ============================================================
 # STRATEGY TOGGLES
+# ------------------------------------------------------------
+# The 1m/5m scalpers below are OFF by default: both the live logs (866 trades,
+# PF<1) and an independent cost-aware backtest (research/) showed they have no
+# edge — their per-trade move is too small to clear fees. regime_trend (daily,
+# ADX-filtered) is the one configuration that survived costs out-of-sample.
+# Re-enable a scalper only after it clears research/run.py with real costs.
 # ============================================================
 ENABLE_SWING_1H: bool = _bool("ENABLE_SWING_1H", True)
-ENABLE_VWAP_MACD: bool = _bool("ENABLE_VWAP_MACD", True)
-ENABLE_KELTNER_RSI: bool = _bool("ENABLE_KELTNER_RSI", True)
-ENABLE_ALMA_STOCH: bool = _bool("ENABLE_ALMA_STOCH", True)
-ENABLE_RSI_BB_REVERT: bool = _bool("ENABLE_RSI_BB_REVERT", True)
+ENABLE_REGIME_TREND: bool = _bool("ENABLE_REGIME_TREND", True)
+ENABLE_VWAP_MACD: bool = _bool("ENABLE_VWAP_MACD", False)
+ENABLE_KELTNER_RSI: bool = _bool("ENABLE_KELTNER_RSI", False)
+ENABLE_ALMA_STOCH: bool = _bool("ENABLE_ALMA_STOCH", False)
+ENABLE_RSI_BB_REVERT: bool = _bool("ENABLE_RSI_BB_REVERT", False)
 
 # ============================================================
 # BOT TOGGLES
 # ============================================================
 ENABLE_MONITOR: bool = _bool("ENABLE_MONITOR", True)
-ENABLE_TRIGGER: bool = _bool("ENABLE_TRIGGER", True)
+# Trigger drives the 1m/5m scalpers, which are disabled (no validated edge).
+# Off by default so it doesn't spin an empty 2s loop. Turn back on only if you
+# re-enable a scalper that has cleared research/run.py.
+ENABLE_TRIGGER: bool = _bool("ENABLE_TRIGGER", False)
 ENABLE_AUTO_SCANNER: bool = _bool("ENABLE_AUTO_SCANNER", True)
 ENABLE_DISCOVERY: bool = _bool("ENABLE_DISCOVERY", True)
 ENABLE_CLEANER: bool = _bool("ENABLE_CLEANER", True)
@@ -177,7 +193,12 @@ def summary() -> str:
 ENABLE_COUNCIL = _bool("ENABLE_COUNCIL", False)
 ENABLE_MEMORY = _bool("ENABLE_MEMORY", True)
 ENABLE_NEWS_FILTER = _bool("ENABLE_NEWS_FILTER", True)
+# Adaptive weights now come from core/learning.py (realized trades + Wilson
+# bounds), NOT the old micro-sample backtest. Keep this ON — it gates sizing.
 ENABLE_ADAPTIVE_WEIGHTS = _bool("ENABLE_ADAPTIVE_WEIGHTS", True)
-ENABLE_BACKTEST_BOT = _bool("ENABLE_BACKTEST_BOT", True)
+# The old in-process backtest bot wrote strategy_weights.json from 4-15 trade
+# samples (noise). It is no longer used for sizing; OFF by default. Use the
+# offline, cost-aware research/ harness instead.
+ENABLE_BACKTEST_BOT = _bool("ENABLE_BACKTEST_BOT", False)
 BACKTEST_INTERVAL = _int("BACKTEST_INTERVAL", 21600)  # 6h
 ENABLE_EMA_CROSS = _bool("ENABLE_EMA_CROSS", False)

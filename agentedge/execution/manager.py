@@ -65,6 +65,13 @@ class PositionManager:
         with self._lock:
             return any(p.asset == asset for p in self._positions.values())
 
+    def strategy_pnls(self, asset, strategy):
+        """Realized P&L list for one (asset, strategy) — the input the
+        self-learning layer judges an edge from."""
+        with self._lock:
+            return [t.get("pnl", 0.0) for t in self._trades
+                    if t.get("asset") == asset and t.get("strategy") == strategy]
+
     def asset_win_rate(self, asset):
         stats = self._learning.get(asset, {})
         wins = stats.get("wins", 0)
@@ -205,19 +212,38 @@ class PositionManager:
             if confidence < settings.AI_MIN_CONFIDENCE:
                 return False, f"{'Council' if council_used else 'AI'} confidence {confidence:.0f} < threshold"
 
-        # === Sizing with adaptive weight (Phase 4) ===
+        # === Self-learning gate + sizing (replaces the old micro-sample weights) ===
+        # Learn from this (asset, strategy)'s OWN realized trades: switch it off
+        # if it is statistically losing, size it up only if it is statistically
+        # winning. Stays neutral until MIN_SAMPLE trades — never acts on noise.
         size_modifier = 1.0
         if settings.ENABLE_ADAPTIVE_WEIGHTS:
             try:
-                from backtest.engine import get_strategy_weight
-                size_modifier = get_strategy_weight(signal.asset, signal.strategy)
-            except Exception:
-                pass
+                from core import learning
+                dec = learning.decision(self.strategy_pnls(signal.asset, signal.strategy))
+                if not dec["enabled"]:
+                    return False, f"learning OFF {signal.strategy}/{signal.asset}: {dec['reason']}"
+                size_modifier = dec["weight"]
+            except Exception as e:
+                logger.warning(f"learning gate error: {e}")
 
-        qty = risk_manager.position_size(
-            asset_cfg.base_qty, signal.edge, self.asset_win_rate(signal.asset)
+        # Risk-based sizing: derive quantity from the stop distance so each trade
+        # risks a fixed fraction of equity (skill: size by risk, not quantity).
+        # Uses current_price (sizing happens before the fill).
+        stop_for_size = signal.stop_loss if signal.stop_loss else (
+            current_price * (1 - asset_cfg.sl_pct) if signal.direction == "LONG"
+            else current_price * (1 + asset_cfg.sl_pct))
+        qty = risk_manager.risk_based_size(
+            entry_price=current_price, stop_price=stop_for_size,
+            equity=settings.RISK_EQUITY, risk_fraction=settings.RISK_FRACTION,
+            max_positions=settings.MAX_POSITIONS,
         ) * size_modifier
         qty = round(qty, 8)
+        if qty <= 0:
+            # fall back to legacy sizing if risk-based produced nothing usable
+            qty = round(risk_manager.position_size(
+                asset_cfg.base_qty, signal.edge, self.asset_win_rate(signal.asset)
+            ) * size_modifier, 8)
 
         # === Execute ===
         result = router.submit_order(
@@ -242,6 +268,7 @@ class PositionManager:
             asset=signal.asset, direction=signal.direction,
             entry=entry, qty=qty, sl=sl, tp=tp,
             strategy=signal.strategy, paper=not router.is_live(),
+            entry_fee=result.get("fee", 0.0),
         )
 
         with self._lock:
@@ -380,7 +407,11 @@ class PositionManager:
                 self._save()
             tg_send(f"🗑 *Force-removed* `{pos.asset}` — persistent data error", category="general")
             return True, "force-removed due to data errors"
-        pnl = pos.pnl(exit_price)
+        # Charge fees honestly: entry fee (paid at open) + exit fee (this close).
+        # The old code computed gross PnL and silently dropped fees, making paper
+        # results look better than any live result ever could.
+        exit_fee = result.get("fee", 0.0)
+        pnl = pos.pnl(exit_price) - pos.entry_fee - exit_fee
         pnl_pct = pos.pnl_pct(exit_price)
 
         with self._lock:

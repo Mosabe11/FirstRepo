@@ -9,3 +9,5 @@ data/*.db.bak
 data/state.json
 logs/
 *.log
+# research data caches — reproducible via `python -m research.data`, not committed
+research/cache/

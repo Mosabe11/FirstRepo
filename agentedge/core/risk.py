@@ -123,12 +123,31 @@ class RiskManager:
     def position_size(self, base_qty: float, edge: float,
                       asset_win_rate: float = 0.5) -> float:
         """
-        Dynamic sizing: scale by edge strength × asset's historical win rate.
-        Bounded to [0.5x, 1.5x] of base_qty.
+        Legacy quantity-based sizing (kept for callers that still pass base_qty).
+        Prefer risk_based_size() — sizing by quantity makes dollar-risk uneven.
         """
         edge_factor = max(0.5, min(1.5, edge / 70.0))   # edge of 70 = 1.0x
         wr_factor = max(0.7, min(1.3, asset_win_rate / 0.5))
         return round(base_qty * edge_factor * wr_factor, 8)
+
+    def risk_based_size(self, entry_price: float, stop_price: float,
+                        equity: float, risk_fraction: float,
+                        max_positions: int = 1) -> float:
+        """
+        Size so the loss at the stop equals `risk_fraction` of equity:
+            qty = (equity * risk_fraction) / |entry - stop|
+        Equalizes dollar-risk across assets of very different price/volatility.
+        Capped so one position's notional can't exceed equity / max_positions
+        (simple portfolio-heat guard). Returns 0.0 if inputs are unusable.
+        """
+        stop_dist = abs(entry_price - stop_price)
+        if stop_dist <= 0 or entry_price <= 0 or equity <= 0:
+            return 0.0
+        qty = (equity * risk_fraction) / stop_dist
+        # notional cap: total exposure across max_positions stays within equity
+        notional_cap = equity / max(1, max_positions)
+        qty_cap = notional_cap / entry_price
+        return round(max(0.0, min(qty, qty_cap)), 8)
 
     # ---------- status ----------
     def snapshot(self) -> dict:

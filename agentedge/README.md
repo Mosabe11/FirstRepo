@@ -1,3 +1,36 @@
+# AgentEdge v3.1 — Validated, Cost-Aware, Self-Learning
+
+> **Read this first — honest status.** The original multi-strategy scalper had
+> **no edge**: 866 paper trades, ~38% win rate, Profit Factor < 1.0. An
+> independent, cost-aware backtest (`research/`) confirmed it on fresh real data.
+> The root cause was structural, not a bug to tune away: 1m/5m signals whose
+> per-trade move is too small to clear fees, made worse by an exit policy that
+> strangled winners and let losers run (inverted reward:risk).
+>
+> **What changed in v3.1:**
+> 1. **A real validation harness** (`research/`) — event-driven, no look-ahead,
+>    models fees + slippage, splits in-sample/out-of-sample. *Run it before
+>    trusting any strategy.* See [research/README.md](research/README.md).
+> 2. **The losing scalpers are OFF by default.** The one configuration that
+>    survived costs out-of-sample — a **daily, ADX-filtered trend strategy**
+>    (`strategies/regime_trend.py`, OOS Profit Factor ~1.2) — is ON.
+> 3. **Fixed the bleed:** R-multiple exits (`execution/position.py`) stop
+>    strangling winners; **fees are now actually subtracted** from PnL; sizing
+>    is **risk-based** (fixed % of equity per trade via the stop distance).
+> 4. **Disciplined self-learning** (`core/learning.py`): the agent judges each
+>    (asset, strategy) by its **own realized trades**, acts only after ≥20 of
+>    them, uses Wilson confidence bounds, and **switches a losing combo off by
+>    itself** — instead of fitting noise on 6 trades like the old weights.
+>
+> **The honest bottom line:** the daily trend edge is *promising but small-sample*
+> (~20 OOS trades = anecdotal). It ships **paper-only**. Nobody — no tool, no
+> model — can promise "a strategy that makes money with high confidence." What
+> this rebuild gives you is the machinery to *prove* an edge before risking a
+> cent, and to stop trading what doesn't work. Keep `LIVE_MODE=false` until the
+> learning layer has a statistically meaningful live record.
+
+---
+
 # AgentEdge v2 — Automated Multi-Strategy Trading Agent
 
 Paper-trading-first autonomous trading agent for crypto (MEXC) and metals (Yahoo Finance gold/silver). Combines the original v10 multi-bot architecture with 4 new low-timeframe scalping strategies from the strategy research doc. Built for clean separation, easy testing, and a one-flag flip from paper → live.

@@ -13,6 +13,7 @@ from strategies.keltner_rsi import KeltnerRsiStrategy
 from strategies.alma_stoch import AlmaStochStrategy
 from strategies.rsi_bb_revert import RsiBbRevertStrategy
 from strategies.ema_cross import EmaCrossStrategy
+from strategies.regime_trend import RegimeTrendStrategy
 
 
 def build_scalping_strategies() -> list[Strategy]:
@@ -34,6 +35,10 @@ def build_swing_strategies() -> list[Strategy]:
     out: list[Strategy] = []
     if settings.ENABLE_SWING_1H:
         out.append(Swing1hStrategy())
+    if getattr(settings, "ENABLE_REGIME_TREND", True):
+        # The validated daily trend strategy. The scanner fetches candles at
+        # each strategy's own .timeframe ("1d" here), so it gets daily bars.
+        out.append(RegimeTrendStrategy())
     return out
 
 
