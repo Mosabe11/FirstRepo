@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<title>AgentEdge</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:#0a0d12;color:#f3f4f6;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;min-height:100vh;-webkit-font-smoothing:antialiased;}
+.mono{font-family:'SF Mono',Menlo,monospace;}
+.hdr{position:sticky;top:0;background:rgba(10,13,18,0.92);backdrop-filter:blur(8px);border-bottom:1px solid #1f2937;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;z-index:10;}
+.logo{font-size:16px;font-weight:700;color:#c4ff3d;}
+.mode{padding:4px 10px;border-radius:6px;font-size:10px;font-weight:700;letter-spacing:0.06em;}
+.mode-paper{background:rgba(16,185,129,0.15);color:#10b981;}
+.mode-live{background:rgba(239,68,68,0.15);color:#ef4444;}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#10b981;margin-right:6px;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+.wrap{padding:16px;max-width:1200px;margin:0 auto;}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px;}
+@media(min-width:768px){.stats{grid-template-columns:repeat(4,1fr);}}
+.stat{background:#11161e;border:1px solid #1f2937;border-radius:10px;padding:14px;}
+.lbl{font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;font-weight:600;}
+.val{font-size:22px;font-weight:700;font-family:'SF Mono',Menlo,monospace;}
+.sub{font-size:11px;color:#9ca3af;margin-top:2px;}
+.pos{color:#10b981;}.neg{color:#ef4444;}
+.actions{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;}
+.btn{background:#11161e;border:1px solid #1f2937;color:#f3f4f6;padding:9px 14px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;}
+.btn-primary{background:#c4ff3d;color:#000;border-color:#c4ff3d;}
+.btn-danger{background:transparent;border-color:#ef4444;color:#ef4444;}
+.btn-sm{padding:5px 9px;font-size:11px;}
+.panel{background:#11161e;border:1px solid #1f2937;border-radius:10px;margin-bottom:12px;overflow:hidden;}
+.panel-h{padding:12px 16px;border-bottom:1px solid #161c26;display:flex;justify-content:space-between;align-items:center;}
+.title{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;}
+.subt{font-size:10px;color:#6b7280;margin-top:1px;}
+.body{padding:14px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{text-align:left;padding:8px 10px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#6b7280;background:#0d1117;}
+td{padding:10px;border-bottom:1px solid #161c26;font-family:'SF Mono',Menlo,monospace;font-size:11.5px;}
+tr:active td{background:#161c26;}
+.dir-long{color:#10b981;font-weight:600;}
+.dir-short{color:#ef4444;font-weight:600;}
+.pill{display:inline-block;padding:2px 7px;background:rgba(196,255,61,0.12);color:#c4ff3d;border-radius:4px;font-size:10px;font-weight:700;}
+.progress{background:#0d1117;height:3px;position:relative;border-radius:2px;overflow:hidden;}
+.progress-bar{position:absolute;left:0;top:0;height:100%;background:linear-gradient(90deg,#ef4444,#f59e0b 50%,#10b981);transition:width 0.3s;}
+.empty{padding:24px;text-align:center;color:#6b7280;font-size:13px;}
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:6px;}
+.chip{padding:8px;background:#0d1117;border:1px solid #161c26;border-radius:6px;text-align:center;font-family:'SF Mono',Menlo,monospace;font-size:11px;font-weight:600;cursor:pointer;border-left-width:2px;}
+.chip-crypto{border-left-color:#06b6d4;}
+.chip-binance{border-left-color:#f59e0b;}
+.chip-metal{border-left-color:#fbbf24;}
+.chip-forex{border-left-color:#a855f7;}
+
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:100;display:none;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+.modal.open{display:block;}
+.modal-card{background:#0a0d12;min-height:100vh;max-width:900px;margin:0 auto;}
+.modal-h{position:sticky;top:0;background:#11161e;border-bottom:1px solid #1f2937;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;z-index:5;}
+.modal-title{font-size:16px;font-weight:700;}
+.modal-sub{font-size:11px;color:#9ca3af;margin-top:2px;}
+.close-btn{background:transparent;border:1px solid #1f2937;color:#f3f4f6;width:32px;height:32px;border-radius:8px;font-size:18px;line-height:1;cursor:pointer;}
+.modal-body{padding:16px;}
+.mini-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:14px;}
+@media(min-width:600px){.mini-stats{grid-template-columns:repeat(4,1fr);}}
+.kv{padding:8px 0;border-bottom:1px solid #161c26;display:flex;justify-content:space-between;}
+.kv:last-child{border:none;}
+.kv-k{color:#6b7280;font-size:12px;}
+.kv-v{font-family:‘SF Mono’,Menlo,monospace;font-size:12px;font-weight:600;}
+.svg-chart{width:100%;height:240px;display:block;}
+.line-price{fill:none;stroke:#c4ff3d;stroke-width:1.5;}
+.line-entry{stroke:#06b6d4;stroke-width:1;stroke-dasharray:4 3;}
+.line-tp{stroke:#10b981;stroke-width:1;stroke-dasharray:4 3;}
+.line-sl{stroke:#ef4444;stroke-width:1;stroke-dasharray:4 3;}
+.chart-fill{fill:url(#priceGradient);opacity:0.15;}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:10px;margin-top:8px;color:#9ca3af;}
+.legend-dot{display:inline-block;width:8px;height:2px;margin-right:4px;vertical-align:middle;}
+</style>
+
+</head>
+<body>
+
+<div class="hdr">
+  <div class="logo">🤖 AgentEdge <span style="font-size:10px;color:#9ca3af;font-weight:400;">v3</span></div>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <span class="mono" style="font-size:10px;color:#9ca3af;"><span class="dot"></span><span id="updated">connecting</span></span>
+    <span id="modeBadge" class="mode mode-paper">PAPER</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="stats">
+    <div class="stat"><div class="lbl">Total PnL</div><div id="totalPnl" class="val">$0.00</div><div class="sub"><span id="totalTrades">0</span> trades</div></div>
+    <div class="stat"><div class="lbl">Win Rate</div><div id="winRate" class="val">0%</div><div class="sub" id="winsLosses">0W / 0L</div></div>
+    <div class="stat"><div class="lbl">Open</div><div id="openPos" class="val">0</div><div class="sub">positions</div></div>
+    <div class="stat"><div class="lbl">Daily PnL</div><div id="dailyPnl" class="val">$0.00</div><div class="sub">limit <span id="dailyLimit">-$0</span></div></div>
+  </div>
+
+  <div class="actions">
+    <button class="btn btn-primary" onclick="load()">↻ Refresh</button>
+    <button class="btn btn-danger" onclick="closeAll()">⊗ Close All</button>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h">
+      <div>
+        <div class="title">Equity Curve</div>
+        <div class="subt">Cumulative PnL</div>
+      </div>
+    </div>
+    <div class="body">
+      <svg id="equityChart" class="svg-chart" viewBox="0 0 600 240" preserveAspectRatio="none"></svg>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h">
+      <div>
+        <div class="title">Open Positions</div>
+        <div class="subt">Tap a row for details</div>
+      </div>
+    </div>
+    <div id="posBody"><div class="empty">No open positions</div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h">
+      <div>
+        <div class="title">Recent Trades</div>
+        <div class="subt">Last 10 closed</div>
+      </div>
+    </div>
+    <div id="tradesBody"><div class="empty">No trades yet</div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h">
+      <div>
+        <div class="title">Watchlist</div>
+        <div class="subt">Tap to analyze</div>
+      </div>
+      <div id="wlCount" class="mono" style="font-size:11px;color:#9ca3af;">0</div>
+    </div>
+    <div class="body">
+      <div id="wlGrid" class="chips"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal -->
+
+<div id="modal" class="modal" onclick="closeModalIfOverlay(event)">
+  <div class="modal-card">
+    <div class="modal-h">
+      <div>
+        <div id="mTitle" class="modal-title">Position</div>
+        <div id="mSub" class="modal-sub">loading...</div>
+      </div>
+      <button class="close-btn" onclick="closeModal()">×</button>
+    </div>
+    <div id="mBody" class="modal-body"><div class="empty">Loading...</div></div>
+  </div>
+</div>
+
+<script>
+var currentId = null;
+
+function FMT(v, d){
+  if (d === undefined) d = 2;
+  return Number(v).toLocaleString('en-US', {minimumFractionDigits: d, maximumFractionDigits: d});
+}
+function SP(v){ return (v >= 0 ? '+' : '') + FMT(v, 2); }
+
+async function api(url){
+  try{
+    var r = await fetch(url);
+    return await r.json();
+  }catch(e){ return null; }
+}
+
+async function load(){
+  var s = await api('/api/status');
+  var p = await api('/api/positions');
+  var t = await api('/api/trades');
+  var w = await api('/api/watchlist');
+
+  if (s) renderStats(s);
+  if (p) renderPositions(p);
+  if (t) renderTrades(t);
+  if (t) renderEquity(t);
+  if (w) renderWatchlist(w);
+
+  if (currentId) openPosition(currentId);
+
+  document.getElementById('updated').textContent = new Date().toLocaleTimeString();
+}
+
+function renderStats(s){
+  var st = s.stats, r = s.risk;
+  var mode = s.mode || 'PAPER';
+  var badge = document.getElementById('modeBadge');
+  badge.textContent = mode;
+  badge.className = 'mode mode-' + mode.toLowerCase();
+
+  var pnl = st.total_pnl || 0;
+  var pe = document.getElementById('totalPnl');
+  pe.textContent = '$' + SP(pnl);
+  pe.className = 'val ' + (pnl >= 0 ? 'pos' : 'neg');
+
+  document.getElementById('totalTrades').textContent = st.total_trades || 0;
+  document.getElementById('winRate').textContent = (st.win_rate || 0) + '%';
+  document.getElementById('winsLosses').textContent = (st.wins || 0) + 'W / ' + (st.losses || 0) + 'L';
+  document.getElementById('openPos').textContent = st.open_positions || 0;
+
+  var dp = r.daily_pnl || 0;
+  var de = document.getElementById('dailyPnl');
+  de.textContent = '$' + SP(dp);
+  de.className = 'val ' + (dp >= 0 ? 'pos' : 'neg');
+  document.getElementById('dailyLimit').textContent = '-$' + FMT(r.daily_limit || 0, 0);
+}
+
+function renderPositions(positions){
+  var body = document.getElementById('posBody');
+  if (!positions.length){
+    body.innerHTML = '<div class="empty">No open positions</div>';
+    return;
+  }
+  var h = '<table><thead><tr><th>Asset</th><th>Dir</th><th>Entry</th><th>Now</th><th>PnL</th><th></th></tr></thead><tbody>';
+  for (var i = 0; i < positions.length; i++){
+    var p = positions[i];
+    var cur = p.current_price || p.entry_price;
+    var pnl = (cur - p.entry_price) * p.quantity * (p.direction === 'LONG' ? 1 : -1);
+    var pnlPct = ((cur - p.entry_price) / p.entry_price) * (p.direction === 'LONG' ? 1 : -1) * 100;
+    var cls = pnl >= 0 ? 'pos' : 'neg';
+    var range = Math.abs(p.take_profit - p.stop_loss);
+    var pg = range > 0 ? ((cur - p.stop_loss) / range) * 100 : 50;
+    if (p.direction === 'SHORT') pg = 100 - pg;
+    pg = Math.max(0, Math.min(100, pg));
+    h += '<tr onclick="openPosition(\'' + p.id + '\')">'
+       + '<td><span class="pill">' + p.asset + '</span></td>'
+       + '<td><span class="dir-' + p.direction.toLowerCase() + '">' + p.direction + '</span></td>'
+       + '<td>' + FMT(p.entry_price, 4) + '</td>'
+       + '<td><strong>' + FMT(cur, 4) + '</strong></td>'
+       + '<td class="' + cls + '"><strong>' + SP(pnl) + '</strong><br><span style="font-size:9px;opacity:0.7;">' + (pnlPct >= 0 ? '+' : '') + FMT(pnlPct, 2) + '%</span></td>'
+       + '<td>›</td>'
+       + '</tr>'
+       + '<tr><td colspan="6" style="padding:0;border:none;"><div class="progress"><div class="progress-bar" style="width:' + pg + '%;"></div></div></td></tr>';
+  }
+  body.innerHTML = h + '</tbody></table>';
+}
+
+function renderTrades(trades){
+  var body = document.getElementById('tradesBody');
+  if (!trades.length){
+    body.innerHTML = '<div class="empty">No trades yet</div>';
+    return;
+  }
+  var h = '<table><thead><tr><th>Time</th><th>Asset</th><th>Dir</th><th>PnL</th><th>%</th></tr></thead><tbody>';
+  var tr = trades.slice(0, 10);
+  for (var i = 0; i < tr.length; i++){
+    var t = tr[i];
+    var time = new Date(t.closed_at * 1000).toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'});
+    var pnl = Number(t.pnl) || 0;
+    var pct = Number(t.pnl_pct) || 0;
+    var cls = pnl >= 0 ? 'pos' : 'neg';
+    h += '<tr>'
+       + '<td style="color:#9ca3af;">' + time + '</td>'
+       + '<td><span class="pill">' + t.asset + '</span></td>'
+       + '<td><span class="dir-' + t.direction.toLowerCase() + '">' + t.direction + '</span></td>'
+       + '<td class="' + cls + '">' + SP(pnl) + '</td>'
+       + '<td class="' + cls + '">' + (pct >= 0 ? '+' : '') + FMT(pct, 2) + '%</td>'
+       + '</tr>';
+  }
+  body.innerHTML = h + '</tbody></table>';
+}
+
+function renderEquity(trades){
+  var svg = document.getElementById('equityChart');
+  if (!trades.length){
+    svg.innerHTML = '<text x="300" y="120" text-anchor="middle" fill="#6b7280" font-size="12">No trades yet</text>';
+    return;
+  }
+  var sorted = trades.slice().reverse();
+  var cum = 0;
+  var vals = sorted.map(function(t){ cum += Number(t.pnl) || 0; return cum; });
+  drawLineChart(svg, vals, '#c4ff3d');
+}
+
+function drawLineChart(svg, values, color){
+  if (!values.length){
+    svg.innerHTML = '<text x="300" y="120" text-anchor="middle" fill="#6b7280" font-size="12">No data</text>';
+    return;
+  }
+  var W = 600, H = 240, PAD = 24;
+  var min = Math.min.apply(null, values);
+  var max = Math.max.apply(null, values);
+  if (min === max){ min -= 1; max += 1; }
+  var range = max - min;
+  var w = W - PAD * 2;
+  var h = H - PAD * 2;
+  var step = values.length > 1 ? w / (values.length - 1) : 0;
+
+  var pathD = '';
+  var areaD = 'M ' + PAD + ' ' + (H - PAD);
+  for (var i = 0; i < values.length; i++){
+    var x = PAD + i * step;
+    var y = PAD + (1 - (values[i] - min) / range) * h;
+    pathD += (i === 0 ? 'M ' : ' L ') + x.toFixed(1) + ' ' + y.toFixed(1);
+    areaD += ' L ' + x.toFixed(1) + ' ' + y.toFixed(1);
+  }
+  areaD += ' L ' + (PAD + (values.length - 1) * step).toFixed(1) + ' ' + (H - PAD) + ' Z';
+
+  var zeroY = PAD + (1 - (0 - min) / range) * h;
+  var zeroLine = (min < 0 && max > 0) ? '<line x1="' + PAD + '" y1="' + zeroY.toFixed(1) + '" x2="' + (W - PAD) + '" y2="' + zeroY.toFixed(1) + '" stroke="#1f2937" stroke-dasharray="2 2"/>' : '';
+
+  svg.innerHTML =
+    '<defs><linearGradient id="priceGradient" x1="0" y1="0" x2="0" y2="1">' +
+    '<stop offset="0%" stop-color="' + color + '" stop-opacity="0.4"/>' +
+    '<stop offset="100%" stop-color="' + color + '" stop-opacity="0"/>' +
+    '</linearGradient></defs>' +
+    '<line x1="' + PAD + '" y1="' + PAD + '" x2="' + PAD + '" y2="' + (H - PAD) + '" stroke="#1f2937"/>' +
+    '<line x1="' + PAD + '" y1="' + (H - PAD) + '" x2="' + (W - PAD) + '" y2="' + (H - PAD) + '" stroke="#1f2937"/>' +
+    zeroLine +
+    '<path d="' + areaD + '" fill="url(#priceGradient)"/>' +
+    '<path d="' + pathD + '" fill="none" stroke="' + color + '" stroke-width="1.8"/>' +
+    '<text x="' + (W - PAD) + '" y="' + (PAD - 4) + '" text-anchor="end" fill="#9ca3af" font-family="SF Mono,monospace" font-size="9">$' + FMT(max, 2) + '</text>' +
+    '<text x="' + (W - PAD) + '" y="' + (H - PAD + 14) + '" text-anchor="end" fill="#9ca3af" font-family="SF Mono,monospace" font-size="9">$' + FMT(min, 2) + '</text>';
+}
+
+function renderWatchlist(items){
+  document.getElementById('wlCount').textContent = items.length + ' assets';
+  var g = document.getElementById('wlGrid');
+  var h = '';
+  for (var i = 0; i < items.length; i++){
+    var a = items[i];
+    h += '<div class="chip chip-' + a.asset_class + '" onclick="analyze(\'' + a.symbol + '\')">' + a.symbol + '</div>';
+  }
+  g.innerHTML = h;
+}
+
+async function analyze(asset){
+  var r = await api('/api/analyze?asset=' + asset);
+  if (r.error){ alert(asset + ': ' + r.error); return; }
+  alert(asset + ' @ ' + FMT(r.price, 4) +
+    '\n\nRSI: ' + FMT(r.rsi, 2) +
+    '\nMACD: ' + FMT(r.macd_hist, 4) +
+    '\nEMA9: ' + FMT(r.ema9, 4) +
+    '\nEMA21: ' + FMT(r.ema21, 4) +
+    '\nEMA50: ' + FMT(r.ema50, 4) +
+    '\nBB: ' + FMT(r.bb_lower, 4) + ' — ' + FMT(r.bb_upper, 4) +
+    '\nVWAP: ' + FMT(r.vwap, 4) +
+    '\nATR: ' + FMT(r.atr, 4));
+}
+
+async function closeAll(){
+  if (!confirm('Close ALL positions?')) return;
+  var r = await api('/api/closeall');
+  alert('Closed ' + r.closed + ' positions');
+  load();
+}
+
+async function closeOne(id){
+  if (!confirm('Close this position?')) return;
+  var r = await api('/api/close?id=' + id);
+  alert(r.message || 'done');
+  closeModal();
+  load();
+}
+
+async function openPosition(id){
+  currentId = id;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  var data = await api('/api/position?id=' + id);
+  if (!data || data.error){
+    document.getElementById('mBody').innerHTML = '<div class="empty">Position not found</div>';
+    return;
+  }
+
+  var p = data.position;
+  var cur = data.current_price || p.entry_price;
+  var pnl = (cur - p.entry_price) * p.quantity * (p.direction === 'LONG' ? 1 : -1);
+  var pnlPct = ((cur - p.entry_price) / p.entry_price) * (p.direction === 'LONG' ? 1 : -1) * 100;
+  var cls = pnl >= 0 ? 'pos' : 'neg';
+  var m = data.memory || {};
+  var openedAt = new Date(p.opened_at * 1000);
+  var durMin = Math.floor((Date.now() / 1000 - p.opened_at) / 60);
+
+  document.getElementById('mTitle').textContent = p.asset + ' ' + p.direction;
+  document.getElementById('mSub').textContent = 'Opened ' + openedAt.toLocaleString() + ' • ' + durMin + 'm ago';
+
+  // Council vote section
+  var council = '';
+  if (m.council_decision){
+    var dec = m.council_decision;
+    var conf = m.council_confidence || 0;
+    var emoji = dec === 'BUY' ? '🟢' : dec === 'SELL' ? '🔴' : '⚪';
+    council = '<div class="panel"><div class="panel-h"><div class="title">🏛 Council Verdict</div></div>'
+      + '<div class="body">'
+      + '<div style="font-size:22px;font-weight:700;">' + emoji + ' ' + dec + '</div>'
+      + '<div style="color:#9ca3af;font-size:12px;margin-top:4px;">Confidence: ' + FMT(conf, 0) + '%</div>'
+      + '</div></div>';
+  } else {
+    council = '<div class="panel"><div class="body" style="text-align:center;color:#9ca3af;font-size:12px;">Manual or direct trade (no Council)</div></div>';
+  }
+
+  // Indicators block
+  var ind = '';
+  if (m.entry_rsi || m.entry_macd_hist || m.entry_atr){
+    ind = '<div class="panel"><div class="panel-h"><div class="title">📊 Indicators at Entry</div></div>'
+      + '<div class="body">'
+      + '<div class="kv"><span class="kv-k">RSI</span><span class="kv-v">' + (m.entry_rsi ? FMT(m.entry_rsi, 2) : '—') + '</span></div>'
+      + '<div class="kv"><span class="kv-k">MACD Hist</span><span class="kv-v">' + (m.entry_macd_hist ? FMT(m.entry_macd_hist, 4) : '—') + '</span></div>'
+      + '<div class="kv"><span class="kv-k">ATR</span><span class="kv-v">' + (m.entry_atr ? FMT(m.entry_atr, 4) : '—') + '</span></div>'
+      + '</div></div>';
+  }
+
+  document.getElementById('mBody').innerHTML =
+    '<div class="mini-stats">'
+    + '<div class="stat"><div class="lbl">Entry</div><div class="val" style="font-size:16px;">' + FMT(p.entry_price, 4) + '</div></div>'
+    + '<div class="stat"><div class="lbl">Current</div><div class="val" style="font-size:16px;">' + FMT(cur, 4) + '</div></div>'
+    + '<div class="stat"><div class="lbl">PnL</div><div class="val ' + cls + '" style="font-size:16px;">' + SP(pnl) + '</div><div class="sub ' + cls + '">' + (pnlPct >= 0 ? '+' : '') + FMT(pnlPct, 2) + '%</div></div>'
+    + '<div class="stat"><div class="lbl">Quantity</div><div class="val" style="font-size:16px;">' + p.quantity + '</div></div>'
+    + '</div>'
+    + '<div class="panel"><div class="panel-h"><div><div class="title">Price Action</div><div class="subt">5m, Entry/SL/TP marked</div></div></div>'
+    + '<div class="body"><svg id="posChart" class="svg-chart" viewBox="0 0 600 240" preserveAspectRatio="none"></svg>'
+    + '<div class="legend">'
+    + '<span><span class="legend-dot" style="background:#c4ff3d;"></span>Price</span>'
+    + '<span><span class="legend-dot" style="background:#06b6d4;"></span>Entry</span>'
+    + '<span><span class="legend-dot" style="background:#10b981;"></span>TP</span>'
+    + '<span><span class="legend-dot" style="background:#ef4444;"></span>SL</span>'
+    + '</div></div></div>'
+    + council
+    + '<div class="panel"><div class="panel-h"><div class="title">📋 Trade Details</div></div>'
+    + '<div class="body">'
+    + '<div class="kv"><span class="kv-k">Strategy</span><span class="kv-v">' + p.strategy + '</span></div>'
+    + '<div class="kv"><span class="kv-k">Direction</span><span class="kv-v dir-' + p.direction.toLowerCase() + '">' + p.direction + '</span></div>'
+    + '<div class="kv"><span class="kv-k">Signal Edge</span><span class="kv-v">' + (m.signal_edge ? FMT(m.signal_edge, 0) : '—') + '</span></div>'
+    + '<div class="kv"><span class="kv-k">Stop Loss</span><span class="kv-v neg">' + FMT(p.stop_loss, 4) + '</span></div>'
+    + '<div class="kv"><span class="kv-k">Take Profit</span><span class="kv-v pos">' + FMT(p.take_profit, 4) + '</span></div>'
+    + '<div class="kv"><span class="kv-k">R:R</span><span class="kv-v">' + FMT(Math.abs(p.take_profit - p.entry_price) / Math.abs(p.entry_price - p.stop_loss), 2) + '</span></div>'
+    + '<div class="kv"><span class="kv-k">Mode</span><span class="kv-v">' + (p.paper ? 'PAPER' : 'LIVE') + '</span></div>'
+    + '</div></div>'
+    + ind
+    + '<button class="btn btn-danger" style="width:100%;padding:12px;margin-top:8px;" onclick="closeOne(\'' + id + '\')">⊗ Close Position</button>';
+
+  // Draw chart
+  drawPositionChart(data);
+}
+
+function drawPositionChart(data){
+  var svg = document.getElementById('posChart');
+  if (!svg) return;
+  var p = data.position;
+  var candles = data.candles || [];
+  if (!candles.length){
+    svg.innerHTML = '<text x="300" y="120" text-anchor="middle" fill="#6b7280" font-size="12">No chart data</text>';
+    return;
+  }
+
+  var closes = candles.map(function(c){ return c.c; });
+  var W = 600, H = 240, PAD = 24;
+  var allVals = closes.concat([p.entry_price, p.stop_loss, p.take_profit]);
+  var min = Math.min.apply(null, allVals);
+  var max = Math.max.apply(null, allVals);
+  var pad = (max - min) * 0.05;
+  min -= pad; max += pad;
+  var range = max - min;
+  var w = W - PAD * 2;
+  var h = H - PAD * 2;
+  var step = closes.length > 1 ? w / (closes.length - 1) : 0;
+
+  function yOf(v){ return PAD + (1 - (v - min) / range) * h; }
+
+  var path = '';
+  var area = 'M ' + PAD + ' ' + (H - PAD);
+  for (var i = 0; i < closes.length; i++){
+    var x = PAD + i * step;
+    var y = yOf(closes[i]);
+    path += (i === 0 ? 'M ' : ' L ') + x.toFixed(1) + ' ' + y.toFixed(1);
+    area += ' L ' + x.toFixed(1) + ' ' + y.toFixed(1);
+  }
+  area += ' L ' + (PAD + (closes.length - 1) * step).toFixed(1) + ' ' + (H - PAD) + ' Z';
+
+  var yEntry = yOf(p.entry_price);
+  var ySL = yOf(p.stop_loss);
+  var yTP = yOf(p.take_profit);
+
+  svg.innerHTML =
+    '<defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">' +
+    '<stop offset="0%" stop-color="#c4ff3d" stop-opacity="0.25"/>' +
+    '<stop offset="100%" stop-color="#c4ff3d" stop-opacity="0"/>' +
+    '</linearGradient></defs>' +
+    '<line x1="' + PAD + '" y1="' + (H - PAD) + '" x2="' + (W - PAD) + '" y2="' + (H - PAD) + '" stroke="#1f2937"/>' +
+    '<line x1="' + PAD + '" y1="' + ySL.toFixed(1) + '" x2="' + (W - PAD) + '" y2="' + ySL.toFixed(1) + '" class="line-sl"/>' +
+    '<text x="' + (W - PAD + 2) + '" y="' + (ySL + 3).toFixed(1) + '" fill="#ef4444" font-family="SF Mono,monospace" font-size="9">SL</text>' +
+    '<line x1="' + PAD + '" y1="' + yEntry.toFixed(1) + '" x2="' + (W - PAD) + '" y2="' + yEntry.toFixed(1) + '" class="line-entry"/>' +
+    '<text x="' + (W - PAD + 2) + '" y="' + (yEntry + 3).toFixed(1) + '" fill="#06b6d4" font-family="SF Mono,monospace" font-size="9">E</text>' +
+    '<line x1="' + PAD + '" y1="' + yTP.toFixed(1) + '" x2="' + (W - PAD) + '" y2="' + yTP.toFixed(1) + '" class="line-tp"/>' +
+    '<text x="' + (W - PAD + 2) + '" y="' + (yTP + 3).toFixed(1) + '" fill="#10b981" font-family="SF Mono,monospace" font-size="9">TP</text>' +
+    '<path d="' + area + '" fill="url(#g2)"/>' +
+    '<path d="' + path + '" fill="none" stroke="#c4ff3d" stroke-width="1.5"/>';
+}
+
+function closeModal(){
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+  currentId = null;
+}
+
+function closeModalIfOverlay(e){
+  if (e.target.id === 'modal') closeModal();
+}
+
+load();
+setInterval(load, 10000);
+</script>
+
+</body>
+</html>

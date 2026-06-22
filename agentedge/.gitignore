@@ -1,0 +1,11 @@
+.env
+*.bak
+*.bak2
+__pycache__/
+*.pyc
+venv/
+data/*.db
+data/*.db.bak
+data/state.json
+logs/
+*.log

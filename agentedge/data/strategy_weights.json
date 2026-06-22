@@ -1,0 +1,1010 @@
+{
+  "weights": {
+    "BTC:vwap_macd": {
+      "weight": 0.8,
+      "win_rate": 0.333,
+      "trades": 6,
+      "avg_pnl_pct": -0.011
+    },
+    "BTC:alma_stoch": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 15,
+      "avg_pnl_pct": 0.008
+    },
+    "BTC:rsi_bb_revert": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 5,
+      "avg_pnl_pct": 0.039
+    },
+    "BTC:ema_cross": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 4,
+      "avg_pnl_pct": 0.056
+    },
+    "ETH:vwap_macd": {
+      "weight": 0.6,
+      "win_rate": 0.143,
+      "trades": 7,
+      "avg_pnl_pct": -0.122
+    },
+    "ETH:alma_stoch": {
+      "weight": 0.829,
+      "win_rate": 0.357,
+      "trades": 14,
+      "avg_pnl_pct": 0.001
+    },
+    "ETH:rsi_bb_revert": {
+      "weight": 1.2,
+      "win_rate": 0.667,
+      "trades": 6,
+      "avg_pnl_pct": 0.093
+    },
+    "ETH:ema_cross": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 5,
+      "avg_pnl_pct": -0.088
+    },
+    "XRP:vwap_macd": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 5,
+      "avg_pnl_pct": 0.122
+    },
+    "XRP:alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.013
+    },
+    "XRP:rsi_bb_revert": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 4,
+      "avg_pnl_pct": 0.025
+    },
+    "XRP:ema_cross": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 6,
+      "avg_pnl_pct": 0.159
+    },
+    "SOL:vwap_macd": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 7,
+      "avg_pnl_pct": -0.414
+    },
+    "SOL:alma_stoch": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 15,
+      "avg_pnl_pct": -0.048
+    },
+    "SOL:rsi_bb_revert": {
+      "weight": 1.4,
+      "win_rate": 1.0,
+      "trades": 1,
+      "avg_pnl_pct": 0.889
+    },
+    "SOL:ema_cross": {
+      "weight": 1.3,
+      "win_rate": 0.75,
+      "trades": 4,
+      "avg_pnl_pct": 0.059
+    },
+    "GOLD:vwap_macd": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -0.254
+    },
+    "GOLD:alma_stoch": {
+      "weight": 0.727,
+      "win_rate": 0.273,
+      "trades": 11,
+      "avg_pnl_pct": -0.022
+    },
+    "GOLD:rsi_bb_revert": {
+      "weight": 0.7,
+      "win_rate": 0.25,
+      "trades": 4,
+      "avg_pnl_pct": -0.029
+    },
+    "GOLD:ema_cross": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 2,
+      "avg_pnl_pct": 0.006
+    },
+    "SILVER:vwap_macd": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 5,
+      "avg_pnl_pct": -0.396
+    },
+    "SILVER:alma_stoch": {
+      "weight": 0.76,
+      "win_rate": 0.3,
+      "trades": 10,
+      "avg_pnl_pct": -0.027
+    },
+    "SILVER:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 4,
+      "avg_pnl_pct": -0.274
+    },
+    "EURUSD:alma_stoch": {
+      "weight": 0.96,
+      "win_rate": 0.467,
+      "trades": 15,
+      "avg_pnl_pct": 0.006
+    },
+    "EURUSD:rsi_bb_revert": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 4,
+      "avg_pnl_pct": -0.011
+    },
+    "EURUSD:ema_cross": {
+      "weight": 1.3,
+      "win_rate": 0.75,
+      "trades": 4,
+      "avg_pnl_pct": 0.042
+    },
+    "GBPUSD:alma_stoch": {
+      "weight": 0.96,
+      "win_rate": 0.467,
+      "trades": 15,
+      "avg_pnl_pct": 0.012
+    },
+    "GBPUSD:ema_cross": {
+      "weight": 1.3,
+      "win_rate": 0.75,
+      "trades": 4,
+      "avg_pnl_pct": 0.029
+    },
+    "USDJPY:alma_stoch": {
+      "weight": 0.657,
+      "win_rate": 0.214,
+      "trades": 14,
+      "avg_pnl_pct": -0.004
+    },
+    "USDJPY:rsi_bb_revert": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 4,
+      "avg_pnl_pct": -0.024
+    },
+    "USDJPY:ema_cross": {
+      "weight": 0.8,
+      "win_rate": 0.333,
+      "trades": 6,
+      "avg_pnl_pct": 0.001
+    },
+    "USDCHF:alma_stoch": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 14,
+      "avg_pnl_pct": 0.007
+    },
+    "USDCHF:rsi_bb_revert": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 2,
+      "avg_pnl_pct": -0.009
+    },
+    "USDCHF:ema_cross": {
+      "weight": 0.8,
+      "win_rate": 0.333,
+      "trades": 3,
+      "avg_pnl_pct": -0.02
+    },
+    "AUDUSD:alma_stoch": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 10,
+      "avg_pnl_pct": 0.012
+    },
+    "AUDUSD:rsi_bb_revert": {
+      "weight": 1.2,
+      "win_rate": 0.667,
+      "trades": 3,
+      "avg_pnl_pct": 0.075
+    },
+    "AUDUSD:ema_cross": {
+      "weight": 1.2,
+      "win_rate": 0.667,
+      "trades": 3,
+      "avg_pnl_pct": 0.022
+    },
+    "USDCAD:alma_stoch": {
+      "weight": 0.6,
+      "win_rate": 0.143,
+      "trades": 14,
+      "avg_pnl_pct": -0.018
+    },
+    "USDCAD:rsi_bb_revert": {
+      "weight": 1.4,
+      "win_rate": 1.0,
+      "trades": 1,
+      "avg_pnl_pct": 0.03
+    },
+    "USDCAD:ema_cross": {
+      "weight": 0.7,
+      "win_rate": 0.25,
+      "trades": 4,
+      "avg_pnl_pct": -0.05
+    },
+    "BNB:vwap_macd": {
+      "weight": 1.2,
+      "win_rate": 0.667,
+      "trades": 6,
+      "avg_pnl_pct": 0.037
+    },
+    "BNB:alma_stoch": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 15,
+      "avg_pnl_pct": -0.015
+    },
+    "BNB:rsi_bb_revert": {
+      "weight": 0.7,
+      "win_rate": 0.25,
+      "trades": 4,
+      "avg_pnl_pct": -0.133
+    },
+    "BNB:ema_cross": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 5,
+      "avg_pnl_pct": 0.081
+    },
+    "DOGE:vwap_macd": {
+      "weight": 0.933,
+      "win_rate": 0.444,
+      "trades": 9,
+      "avg_pnl_pct": 0.051
+    },
+    "DOGE:alma_stoch": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 15,
+      "avg_pnl_pct": 0.012
+    },
+    "DOGE:rsi_bb_revert": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 5,
+      "avg_pnl_pct": 0.096
+    },
+    "DOGE:ema_cross": {
+      "weight": 0.8,
+      "win_rate": 0.333,
+      "trades": 3,
+      "avg_pnl_pct": 0.067
+    },
+    "ADA:vwap_macd": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 8,
+      "avg_pnl_pct": 0.051
+    },
+    "ADA:alma_stoch": {
+      "weight": 0.6,
+      "win_rate": 0.067,
+      "trades": 15,
+      "avg_pnl_pct": -0.091
+    },
+    "ADA:rsi_bb_revert": {
+      "weight": 0.7,
+      "win_rate": 0.25,
+      "trades": 4,
+      "avg_pnl_pct": 0.04
+    },
+    "ADA:ema_cross": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 4,
+      "avg_pnl_pct": 0.217
+    },
+    "AVAX:vwap_macd": {
+      "weight": 0.743,
+      "win_rate": 0.286,
+      "trades": 7,
+      "avg_pnl_pct": -0.22
+    },
+    "AVAX:alma_stoch": {
+      "weight": 0.743,
+      "win_rate": 0.286,
+      "trades": 14,
+      "avg_pnl_pct": -0.057
+    },
+    "AVAX:rsi_bb_revert": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 5,
+      "avg_pnl_pct": -0.012
+    },
+    "AVAX:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 3,
+      "avg_pnl_pct": -0.301
+    },
+    "ATLA:vwap_macd": {
+      "weight": 1.067,
+      "win_rate": 0.556,
+      "trades": 9,
+      "avg_pnl_pct": 2.664
+    },
+    "ATLA:alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.516
+    },
+    "ATLA:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -6.232
+    },
+    "ATLA:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -5.601
+    },
+    "DVERSE:vwap_macd": {
+      "weight": 0.667,
+      "win_rate": 0.222,
+      "trades": 9,
+      "avg_pnl_pct": 2.225
+    },
+    "DVERSE:alma_stoch": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 15,
+      "avg_pnl_pct": 0.217
+    },
+    "DVERSE:rsi_bb_revert": {
+      "weight": 0.8,
+      "win_rate": 0.333,
+      "trades": 6,
+      "avg_pnl_pct": -2.971
+    },
+    "DVERSE:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 5,
+      "avg_pnl_pct": -4.329
+    },
+    "BCH:vwap_macd": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 4,
+      "avg_pnl_pct": -3.426
+    },
+    "BCH:alma_stoch": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 15,
+      "avg_pnl_pct": 0.258
+    },
+    "BCH:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 1,
+      "avg_pnl_pct": -7.896
+    },
+    "BCH:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 1,
+      "avg_pnl_pct": -6.996
+    },
+    "JGGL:vwap_macd": {
+      "weight": 1.067,
+      "win_rate": 0.556,
+      "trades": 9,
+      "avg_pnl_pct": 2.664
+    },
+    "JGGL:alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.516
+    },
+    "JGGL:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -6.232
+    },
+    "JGGL:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -5.601
+    },
+    "RIVER:vwap_macd": {
+      "weight": 1.086,
+      "win_rate": 0.571,
+      "trades": 7,
+      "avg_pnl_pct": 2.381
+    },
+    "RIVER:alma_stoch": {
+      "weight": 0.677,
+      "win_rate": 0.231,
+      "trades": 13,
+      "avg_pnl_pct": -1.392
+    },
+    "RIVER:rsi_bb_revert": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 5,
+      "avg_pnl_pct": -1.763
+    },
+    "TRUMP:vwap_macd": {
+      "weight": 1.15,
+      "win_rate": 0.625,
+      "trades": 8,
+      "avg_pnl_pct": 2.393
+    },
+    "TRUMP:alma_stoch": {
+      "weight": 0.769,
+      "win_rate": 0.308,
+      "trades": 13,
+      "avg_pnl_pct": -0.217
+    },
+    "TRUMP:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 4,
+      "avg_pnl_pct": -2.828
+    },
+    "CAKE:vwap_macd": {
+      "weight": 1.067,
+      "win_rate": 0.556,
+      "trades": 9,
+      "avg_pnl_pct": 2.664
+    },
+    "CAKE:alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.516
+    },
+    "CAKE:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -6.232
+    },
+    "CAKE:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -5.601
+    },
+    "BSB:vwap_macd": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 10,
+      "avg_pnl_pct": -1.814
+    },
+    "BSB:alma_stoch": {
+      "weight": 0.743,
+      "win_rate": 0.286,
+      "trades": 14,
+      "avg_pnl_pct": -0.401
+    },
+    "BSB:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.167,
+      "trades": 6,
+      "avg_pnl_pct": -3.559
+    },
+    "BSB:ema_cross": {
+      "weight": 1.4,
+      "win_rate": 1.0,
+      "trades": 3,
+      "avg_pnl_pct": 5.471
+    },
+    "UBOX:vwap_macd": {
+      "weight": 1.067,
+      "win_rate": 0.556,
+      "trades": 9,
+      "avg_pnl_pct": 2.664
+    },
+    "UBOX:alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.516
+    },
+    "UBOX:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -6.232
+    },
+    "UBOX:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -5.601
+    },
+    "GOLD(PAXG):vwap_macd": {
+      "weight": 1.067,
+      "win_rate": 0.556,
+      "trades": 9,
+      "avg_pnl_pct": 2.664
+    },
+    "GOLD(PAXG):alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.516
+    },
+    "GOLD(PAXG):rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -6.232
+    },
+    "GOLD(PAXG):ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -5.601
+    },
+    "LAB:vwap_macd": {
+      "weight": 0.76,
+      "win_rate": 0.3,
+      "trades": 10,
+      "avg_pnl_pct": -0.033
+    },
+    "LAB:alma_stoch": {
+      "weight": 0.657,
+      "win_rate": 0.214,
+      "trades": 14,
+      "avg_pnl_pct": -0.247
+    },
+    "LAB:rsi_bb_revert": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 5,
+      "avg_pnl_pct": -0.956
+    },
+    "LAB:ema_cross": {
+      "weight": 0.7,
+      "win_rate": 0.25,
+      "trades": 4,
+      "avg_pnl_pct": -2.449
+    },
+    "GOLD(XAUT):vwap_macd": {
+      "weight": 1.067,
+      "win_rate": 0.556,
+      "trades": 9,
+      "avg_pnl_pct": 2.664
+    },
+    "GOLD(XAUT):alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.516
+    },
+    "GOLD(XAUT):rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -6.232
+    },
+    "GOLD(XAUT):ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -5.601
+    },
+    "ASSET:vwap_macd": {
+      "weight": 1.067,
+      "win_rate": 0.556,
+      "trades": 9,
+      "avg_pnl_pct": 2.664
+    },
+    "ASSET:alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.516
+    },
+    "ASSET:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -6.232
+    },
+    "ASSET:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -5.601
+    },
+    "DOT:vwap_macd": {
+      "weight": 1.067,
+      "win_rate": 0.556,
+      "trades": 9,
+      "avg_pnl_pct": 2.664
+    },
+    "DOT:alma_stoch": {
+      "weight": 0.72,
+      "win_rate": 0.267,
+      "trades": 15,
+      "avg_pnl_pct": -0.516
+    },
+    "DOT:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -6.232
+    },
+    "DOT:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 6,
+      "avg_pnl_pct": -5.601
+    },
+    "PENGU:vwap_macd": {
+      "weight": 1.257,
+      "win_rate": 0.714,
+      "trades": 7,
+      "avg_pnl_pct": 1.708
+    },
+    "PENGU:alma_stoch": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 15,
+      "avg_pnl_pct": -0.093
+    },
+    "PENGU:rsi_bb_revert": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 5,
+      "avg_pnl_pct": -0.609
+    },
+    "PENGU:ema_cross": {
+      "weight": 1.4,
+      "win_rate": 1.0,
+      "trades": 2,
+      "avg_pnl_pct": 1.567
+    },
+    "WXT:vwap_macd": {
+      "weight": 1.257,
+      "win_rate": 0.714,
+      "trades": 7,
+      "avg_pnl_pct": 1.708
+    },
+    "WXT:alma_stoch": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 15,
+      "avg_pnl_pct": -0.093
+    },
+    "WXT:rsi_bb_revert": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 5,
+      "avg_pnl_pct": -0.609
+    },
+    "WXT:ema_cross": {
+      "weight": 1.4,
+      "win_rate": 1.0,
+      "trades": 2,
+      "avg_pnl_pct": 1.567
+    },
+    "MBG:vwap_macd": {
+      "weight": 1.257,
+      "win_rate": 0.714,
+      "trades": 7,
+      "avg_pnl_pct": 1.708
+    },
+    "MBG:alma_stoch": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 15,
+      "avg_pnl_pct": -0.093
+    },
+    "MBG:rsi_bb_revert": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 5,
+      "avg_pnl_pct": -0.609
+    },
+    "MBG:ema_cross": {
+      "weight": 1.4,
+      "win_rate": 1.0,
+      "trades": 2,
+      "avg_pnl_pct": 1.567
+    },
+    "SILVER:ema_cross": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 3,
+      "avg_pnl_pct": -0.344
+    },
+    "GBPUSD:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 1,
+      "avg_pnl_pct": -0.034
+    },
+    "XT:vwap_macd": {
+      "weight": 1.36,
+      "win_rate": 0.8,
+      "trades": 5,
+      "avg_pnl_pct": 4.903
+    },
+    "XT:alma_stoch": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 15,
+      "avg_pnl_pct": -2.603
+    },
+    "XT:rsi_bb_revert": {
+      "weight": 1.4,
+      "win_rate": 1.0,
+      "trades": 2,
+      "avg_pnl_pct": 25.609
+    },
+    "XT:ema_cross": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 2,
+      "avg_pnl_pct": 3.719
+    },
+    "RAIN:vwap_macd": {
+      "weight": 0.743,
+      "win_rate": 0.286,
+      "trades": 7,
+      "avg_pnl_pct": 1.953
+    },
+    "RAIN:alma_stoch": {
+      "weight": 0.769,
+      "win_rate": 0.308,
+      "trades": 13,
+      "avg_pnl_pct": -0.099
+    },
+    "RAIN:rsi_bb_revert": {
+      "weight": 1.3,
+      "win_rate": 0.75,
+      "trades": 4,
+      "avg_pnl_pct": 0.048
+    },
+    "RAIN:ema_cross": {
+      "weight": 0.7,
+      "win_rate": 0.25,
+      "trades": 4,
+      "avg_pnl_pct": -0.45
+    },
+    "H:vwap_macd": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 10,
+      "avg_pnl_pct": 4.045
+    },
+    "H:alma_stoch": {
+      "weight": 0.769,
+      "win_rate": 0.308,
+      "trades": 13,
+      "avg_pnl_pct": -0.365
+    },
+    "H:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 5,
+      "avg_pnl_pct": -7.829
+    },
+    "H:ema_cross": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 5,
+      "avg_pnl_pct": 2.275
+    },
+    "CLAW:vwap_macd": {
+      "weight": 0.933,
+      "win_rate": 0.444,
+      "trades": 9,
+      "avg_pnl_pct": -0.56
+    },
+    "CLAW:alma_stoch": {
+      "weight": 0.6,
+      "win_rate": 0.067,
+      "trades": 15,
+      "avg_pnl_pct": -0.153
+    },
+    "CLAW:rsi_bb_revert": {
+      "weight": 0.7,
+      "win_rate": 0.25,
+      "trades": 4,
+      "avg_pnl_pct": -2.417
+    },
+    "SKYAI:vwap_macd": {
+      "weight": 1.257,
+      "win_rate": 0.714,
+      "trades": 7,
+      "avg_pnl_pct": 1.941
+    },
+    "SKYAI:alma_stoch": {
+      "weight": 0.829,
+      "win_rate": 0.357,
+      "trades": 14,
+      "avg_pnl_pct": 0.421
+    },
+    "SKYAI:rsi_bb_revert": {
+      "weight": 0.8,
+      "win_rate": 0.333,
+      "trades": 6,
+      "avg_pnl_pct": -0.393
+    },
+    "WLD:vwap_macd": {
+      "weight": 0.76,
+      "win_rate": 0.3,
+      "trades": 10,
+      "avg_pnl_pct": -0.684
+    },
+    "WLD:alma_stoch": {
+      "weight": 0.914,
+      "win_rate": 0.429,
+      "trades": 14,
+      "avg_pnl_pct": 0.125
+    },
+    "WLD:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -0.599
+    },
+    "ZEC:vwap_macd": {
+      "weight": 0.933,
+      "win_rate": 0.444,
+      "trades": 9,
+      "avg_pnl_pct": -0.231
+    },
+    "ZEC:alma_stoch": {
+      "weight": 0.677,
+      "win_rate": 0.231,
+      "trades": 13,
+      "avg_pnl_pct": -0.194
+    },
+    "ZEC:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 2,
+      "avg_pnl_pct": -0.819
+    },
+    "SIREN:vwap_macd": {
+      "weight": 0.76,
+      "win_rate": 0.3,
+      "trades": 10,
+      "avg_pnl_pct": -1.096
+    },
+    "SIREN:alma_stoch": {
+      "weight": 0.914,
+      "win_rate": 0.429,
+      "trades": 14,
+      "avg_pnl_pct": -0.51
+    },
+    "SIREN:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.0,
+      "trades": 3,
+      "avg_pnl_pct": -1.589
+    },
+    "BEAT:vwap_macd": {
+      "weight": 0.945,
+      "win_rate": 0.455,
+      "trades": 11,
+      "avg_pnl_pct": 0.03
+    },
+    "BEAT:alma_stoch": {
+      "weight": 0.64,
+      "win_rate": 0.2,
+      "trades": 15,
+      "avg_pnl_pct": -0.21
+    },
+    "BEAT:rsi_bb_revert": {
+      "weight": 1.12,
+      "win_rate": 0.6,
+      "trades": 5,
+      "avg_pnl_pct": 0.693
+    },
+    "VELVET:vwap_macd": {
+      "weight": 1.0,
+      "win_rate": 0.5,
+      "trades": 10,
+      "avg_pnl_pct": -0.745
+    },
+    "VELVET:alma_stoch": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 15,
+      "avg_pnl_pct": 0.123
+    },
+    "VELVET:rsi_bb_revert": {
+      "weight": 0.6,
+      "win_rate": 0.167,
+      "trades": 6,
+      "avg_pnl_pct": -0.743
+    },
+    "BTW:vwap_macd": {
+      "weight": 1.3,
+      "win_rate": 0.75,
+      "trades": 4,
+      "avg_pnl_pct": -0.15
+    },
+    "BTW:alma_stoch": {
+      "weight": 0.6,
+      "win_rate": 0.071,
+      "trades": 14,
+      "avg_pnl_pct": -1.265
+    },
+    "BTW:rsi_bb_revert": {
+      "weight": 0.88,
+      "win_rate": 0.4,
+      "trades": 5,
+      "avg_pnl_pct": 1.327
+    }
+  },
+  "last_run": {
+    "BTC": 1782125245.6650934,
+    "ETH": 1782125246.6042016,
+    "XRP": 1782125247.4290545,
+    "SOL": 1782125248.2854264,
+    "GOLD": 1782125248.9653723,
+    "SILVER": 1782125249.690849,
+    "EURUSD": 1782125250.425248,
+    "GBPUSD": 1782125251.2853262,
+    "USDJPY": 1782125252.0105526,
+    "USDCHF": 1782125252.7218955,
+    "AUDUSD": 1782125253.6824677,
+    "USDCAD": 1782125254.9285665,
+    "BNB": 1782125255.9017682,
+    "DOGE": 1782125256.6839035,
+    "ADA": 1782125257.4844327,
+    "AVAX": 1782125258.2290452,
+    "ATLA": 1779079307.4628048,
+    "DVERSE": 1779254314.3678434,
+    "BCH": 1779011038.237206,
+    "JGGL": 1779079306.2407658,
+    "RIVER": 1779012649.8450384,
+    "TRUMP": 1779028374.432244,
+    "CAKE": 1779079305.5155258,
+    "BSB": 1779578549.5253513,
+    "UBOX": 1779079306.018956,
+    "GOLD(PAXG)": 1779079306.4747062,
+    "LAB": 1781009126.3863125,
+    "GOLD(XAUT)": 1779079306.9641774,
+    "ASSET": 1779079307.192844,
+    "DOT": 1779079307.7798822,
+    "PENGU": 1779079309.1473098,
+    "WXT": 1779079309.4028327,
+    "MBG": 1779079309.7086098,
+    "XT": 1779362390.8826504,
+    "RAIN": 1779924392.779024,
+    "H": 1781009127.3066347,
+    "CLAW": 1781009128.0988555,
+    "SKYAI": 1781009128.8823917,
+    "WLD": 1781009129.665438,
+    "ZEC": 1781009130.5216966,
+    "SIREN": 1782125260.6943939,
+    "BEAT": 1782125259.0443935,
+    "VELVET": 1782125259.8577712,
+    "BTW": 1782125261.6502833
+  }
+}

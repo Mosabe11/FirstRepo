@@ -1,0 +1,193 @@
+"""council/ai_strategist.py — AI generates signals directly from market data."""
+import json
+import time
+import logging
+import threading
+import requests
+import numpy as np
+
+from config import settings
+from core.smc_indicators import get_smc_context, summarize_for_ai
+
+logger = logging.getLogger(__name__)
+_API_URL = "https://api.deepseek.com/v1/chat/completions"
+
+_cache = {}
+_cache_lock = threading.Lock()
+_CACHE_TTL = 180  # 3 minutes
+
+_rate_lock = threading.Lock()
+_call_count = 0
+_call_reset = 0
+_MAX_CALLS_PER_HOUR = 30
+
+
+def _check_rate_limit():
+    global _call_count, _call_reset
+    with _rate_lock:
+        now = time.time()
+        if now - _call_reset > 3600:
+            _call_count = 0
+            _call_reset = now
+        if _call_count >= _MAX_CALLS_PER_HOUR:
+            return False
+        _call_count += 1
+        return True
+
+
+def _build_context(c5, c15, c1h):
+    from core.indicators import compute_all
+    ctx = {}
+    for tf, candles in [("5m", c5), ("15m", c15), ("1h", c1h)]:
+        if not candles or len(candles) < 20:
+            continue
+        arr = np.array(candles[-30:], dtype=float)
+        closes = arr[:, 4]
+        vols = arr[:, 5]
+        ind = compute_all(candles)
+        snap = {
+            "price": float(closes[-1]),
+            "change_10bar_pct": float((closes[-1] - closes[-10]) / closes[-10] * 100),
+            "vol_ratio": float(vols[-3:].mean() / vols[:-3].mean()) if vols[:-3].mean() else 1,
+            "trend": "up" if closes[-1] > closes[-5] > closes[-10] else
+                     "down" if closes[-1] < closes[-5] < closes[-10] else "mixed",
+        }
+        if ind:
+            try:
+                snap["rsi"] = round(float(ind["rsi"][-1]), 1)
+                snap["macd_hist"] = round(float(ind["macd_hist"][-1]), 5)
+                snap["bb_upper"] = round(float(ind["bb_upper"][-1]), 4)
+                snap["bb_lower"] = round(float(ind["bb_lower"][-1]), 4)
+                snap["ema21"] = round(float(ind["ema21"][-1]), 4)
+                snap["ema50"] = round(float(ind["ema50"][-1]), 4)
+            except Exception:
+                pass
+        ctx[tf] = snap
+    return ctx
+
+
+def generate_signal(asset, asset_class, fetch_ohlcv_fn):
+    """AI analyzes market data and returns a trade signal or None."""
+    if not settings.DEEPSEEK_KEY:
+        return None
+    if not _check_rate_limit():
+        return None
+
+    cache_key = "ai_strat:" + asset
+    with _cache_lock:
+        if cache_key in _cache:
+            ts, val = _cache[cache_key]
+            if time.time() - ts < _CACHE_TTL:
+                return val
+
+    try:
+        from config.watchlist import to_dict
+        cfg = to_dict().get(asset)
+        if not cfg:
+            return None
+
+        c5 = fetch_ohlcv_fn(asset_class, cfg.exchange_symbol, "5m", 50)
+        c15 = fetch_ohlcv_fn(asset_class, cfg.exchange_symbol, "15m", 50)
+        c1h = fetch_ohlcv_fn(asset_class, cfg.exchange_symbol, "1h", 50)
+        if not c5 or len(c5) < 20:
+            return None
+
+        ctx = _build_context(c5, c15, c1h)
+        cp = ctx.get("5m", {}).get("price")
+        
+        # Add SMC context (OB, FVG, Liquidity, POC)
+        try:
+            smc = get_smc_context(asset, asset_class, cfg.exchange_symbol, fetch_ohlcv_fn)
+            ctx["smc"] = summarize_for_ai(smc)
+        except Exception:
+            pass
+        if not cp:
+            return None
+
+        system_prompt = (
+            "You are an elite scalping trader with Smart Money Concepts knowledge. "
+            "You analyze: Order Blocks (OB), Fair Value Gaps (FVG), Liquidity zones, and POC. "
+            "Given multi-timeframe data, "
+            "decide if there is a HIGH-PROBABILITY trade setup right now. "
+            "Be SELECTIVE — only signal if these align: "
+            "1) Clear directional bias on 1h "
+            "2) Confirming momentum on 15m "
+            "3) Entry trigger on 5m (pullback, breakout, or extreme) "
+            "4) Volume confirms the move "
+            "If unsure, return should_trade=false. "
+            "Set sl_pct between 0.005-0.015, tp_pct between 0.015-0.04 (R:R >= 2). "
+            "Respond ONLY in JSON: "
+            '{"should_trade":true|false,"direction":"LONG|SHORT","edge":50-95,'
+            '"sl_pct":0.005-0.015,"tp_pct":0.015-0.04,"reasoning":"short"}'
+        )
+
+        user_msg = (
+            "Asset: " + asset + " (" + asset_class + ")\n"
+            "Current price: " + str(cp) + "\n\n"
+            "Data: " + json.dumps(ctx, indent=2)
+        )
+
+        r = requests.post(
+            _API_URL,
+            headers={
+                "Authorization": "Bearer " + settings.DEEPSEEK_KEY,
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": "deepseek-chat",
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_msg},
+                ],
+                "temperature": 0.3,
+                "max_tokens": 350,
+            },
+            timeout=20,
+        )
+
+        if r.status_code != 200:
+            return None
+
+        content = r.json()["choices"][0]["message"]["content"].strip()
+        if content.startswith("```"):
+            content = content.strip("`").lstrip("json").strip()
+
+        try:
+            data = json.loads(content)
+        except json.JSONDecodeError:
+            import re
+            should = re.search(r'"should_trade"\s*:\s*(true|false)', content)
+            direction = re.search(r'"direction"\s*:\s*"(\w+)"', content)
+            edge = re.search(r'"edge"\s*:\s*(\d+)', content)
+            if not should:
+                return None
+            data = {
+                "should_trade": should.group(1) == "true",
+                "direction": direction.group(1).upper() if direction else "LONG",
+                "edge": int(edge.group(1)) if edge else 60,
+                "sl_pct": 0.01,
+                "tp_pct": 0.025,
+                "reasoning": "parse fallback",
+            }
+
+        data["sl_pct"] = max(0.005, min(0.02, float(data.get("sl_pct", 0.01))))
+        data["tp_pct"] = max(0.015, min(0.05, float(data.get("tp_pct", 0.025))))
+
+        direction = str(data.get("direction", "LONG")).upper()
+        if direction == "LONG":
+            data["suggested_sl"] = cp * (1 - data["sl_pct"])
+            data["suggested_tp"] = cp * (1 + data["tp_pct"])
+        else:
+            data["suggested_sl"] = cp * (1 + data["sl_pct"])
+            data["suggested_tp"] = cp * (1 - data["tp_pct"])
+
+        data["current_price"] = cp
+
+        with _cache_lock:
+            _cache[cache_key] = (time.time(), data)
+
+        return data
+
+    except Exception as e:
+        logger.warning("AI Strategist error: " + str(e))
+        return None

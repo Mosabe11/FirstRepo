@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-05-22T04:48:18.280028Z",
+  "db_path": "data/memory.db",
+  "overall": {
+    "total_closed": 307,
+    "wins": 94,
+    "win_rate": 30.6,
+    "total_pnl": -230.43,
+    "avg_pnl_per_trade": -0.75
+  },
+  "by_strategy": [
+    {
+      "key": "ema_cross",
+      "trades": 87,
+      "win_rate": 19.5,
+      "pnl": -123.38
+    },
+    {
+      "key": "vwap_macd",
+      "trades": 129,
+      "win_rate": 31.0,
+      "pnl": -89.98
+    },
+    {
+      "key": "rsi_bb_revert",
+      "trades": 48,
+      "win_rate": 29.2,
+      "pnl": -14.95
+    },
+    {
+      "key": "swing_1h",
+      "trades": 4,
+      "win_rate": 50.0,
+      "pnl": -5.07
+    },
+    {
+      "key": "alma_stoch",
+      "trades": 12,
+      "win_rate": 16.7,
+      "pnl": -1.37
+    },
+    {
+      "key": "breakout_ai",
+      "trades": 27,
+      "win_rate": 70.4,
+      "pnl": 4.33
+    }
+  ],
+  "by_asset_class": [],
+  "by_close_reason": [
+    {
+      "key": "SL",
+      "trades": 238,
+      "win_rate": 14.3,
+      "pnl": -275.31
+    },
+    {
+      "key": "TRAIL",
+      "trades": 24,
+      "win_rate": 95.8,
+      "pnl": 3.41
+    },
+    {
+      "key": "TP",
+      "trades": 45,
+      "win_rate": 82.2,
+      "pnl": 41.47
+    }
+  ],
+  "by_asset": [
+    {
+      "key": "USDJPY",
+      "trades": 12,
+      "win_rate": 25.0,
+      "pnl": -108.4
+    },
+    {
+      "key": "ETH",
+      "trades": 28,
+      "win_rate": 25.0,
+      "pnl": -23.94
+    },
+    {
+      "key": "SILVER",
+      "trades": 7,
+      "win_rate": 57.1,
+      "pnl": -16.56
+    },
+    {
+      "key": "ASSET",
+      "trades": 1,
+      "win_rate": 0.0,
+      "pnl": -14.66
+    },
+    {
+      "key": "XRP",
+      "trades": 20,
+      "win_rate": 30.0,
+      "pnl": -11.08
+    },
+    {
+      "key": "SOL",
+      "trades": 37,
+      "win_rate": 40.5,
+      "pnl": -10.0
+    },
+    {
+      "key": "BTC",
+      "trades": 25,
+      "win_rate": 32.0,
+      "pnl": -9.64
+    },
+    {
+      "key": "BNB",
+      "trades": 23,
+      "win_rate": 30.4,
+      "pnl": -8.83
+    },
+    {
+      "key": "XT",
+      "trades": 3,
+      "win_rate": 66.7,
+      "pnl": -7.63
+    },
+    {
+      "key": "AVAX",
+      "trades": 33,
+      "win_rate": 24.2,
+      "pnl": -5.72
+    },
+    {
+      "key": "DVERSE",
+      "trades": 7,
+      "win_rate": 28.6,
+      "pnl": -4.64
+    },
+    {
+      "key": "GBPUSD",
+      "trades": 11,
+      "win_rate": 9.1,
+      "pnl": -3.6
+    },
+    {
+      "key": "USDCHF",
+      "trades": 11,
+      "win_rate": 9.1,
+      "pnl": -3.42
+    },
+    {
+      "key": "ADA",
+      "trades": 22,
+      "win_rate": 27.3,
+      "pnl": -2.36
+    },
+    {
+      "key": "USDCAD",
+      "trades": 6,
+      "win_rate": 33.3,
+      "pnl": -1.79
+    },
+    {
+      "key": "EURUSD",
+      "trades": 9,
+      "win_rate": 0.0,
+      "pnl": -1.72
+    },
+    {
+      "key": "AUDUSD",
+      "trades": 17,
+      "win_rate": 23.5,
+      "pnl": -1.36
+    },
+    {
+      "key": "GOLD",
+      "trades": 2,
+      "win_rate": 50.0,
+      "pnl": 1.0
+    },
+    {
+      "key": "BSB",
+      "trades": 10,
+      "win_rate": 80.0,
+      "pnl": 1.21
+    },
+    {
+      "key": "DOGE",
+      "trades": 23,
+      "win_rate": 39.1,
+      "pnl": 2.72
+    }
+  ],
+  "time_window": {
+    "آخر 7 أيام": {
+      "trades": 0,
+      "win_rate": 0.0,
+      "pnl": 0.0
+    },
+    "قبل ذلك": {
+      "trades": 307,
+      "win_rate": 30.6,
+      "pnl": -230.43
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "generated_at": "2026-06-01T19:58:06.239028",
+  "actions": [
+    {
+      "target": "strategy",
+      "name": "ema_cross",
+      "action": "KILL",
+      "why": "WR 20.4% وخسارة -147.68 — أوقفها"
+    },
+    {
+      "target": "strategy",
+      "name": "vwap_macd",
+      "action": "KILL",
+      "why": "خسارة تراكمية -135.47 — أوقفها"
+    },
+    {
+      "target": "strategy",
+      "name": "breakout_ai",
+      "action": "KILL",
+      "why": "خسارة تراكمية -50.35 — أوقفها"
+    },
+    {
+      "target": "strategy",
+      "name": "rsi_bb_revert",
+      "action": "KILL",
+      "why": "خسارة تراكمية -26.79 — أوقفها"
+    },
+    {
+      "target": "strategy",
+      "name": "alma_stoch",
+      "action": "TIGHTEN",
+      "why": "WR 26.7% ضعيف — شدّد العتبة أو قلّل الحجم"
+    },
+    {
+      "target": "asset",
+      "name": "USDJPY",
+      "action": "REMOVE_FROM_WATCHLIST",
+      "why": "WR 29.6% وخسارة -109.66 — أوقفها"
+    },
+    {
+      "target": "asset",
+      "name": "ETH",
+      "action": "REMOVE_FROM_WATCHLIST",
+      "why": "خسارة تراكمية -80.23 — أوقفها"
+    },
+    {
+      "target": "asset",
+      "name": "XRP",
+      "action": "REMOVE_FROM_WATCHLIST",
+      "why": "WR 28.6% وخسارة -28.82 — أوقفها"
+    },
+    {
+      "target": "asset",
+      "name": "BTC",
+      "action": "REMOVE_FROM_WATCHLIST",
+      "why": "خسارة تراكمية -26.38 — أوقفها"
+    },
+    {
+      "target": "asset",
+      "name": "SOL",
+      "action": "REMOVE_FROM_WATCHLIST",
+      "why": "خسارة تراكمية -17.18 — أوقفها"
+    },
+    {
+      "target": "asset",
+      "name": "BNB",
+      "action": "REMOVE_FROM_WATCHLIST",
+      "why": "خسارة تراكمية -13.77 — أوقفها"
+    }
+  ],
+  "overall": {
+    "trades": 866,
+    "win_rate": 38.5,
+    "pnl": -366.62
+  },
+  "by_strategy": [
+    {
+      "key": "ema_cross",
+      "trades": 201,
+      "wins": 41,
+      "win_rate": 20.4,
+      "pnl": -147.68,
+      "avg_pnl": -0.73,
+      "verdict": "KILL",
+      "reason": "WR 20.4% وخسارة -147.68 — أوقفها"
+    },
+    {
+      "key": "vwap_macd",
+      "trades": 359,
+      "wins": 143,
+      "win_rate": 39.8,
+      "pnl": -135.47,
+      "avg_pnl": -0.38,
+      "verdict": "KILL",
+      "reason": "خسارة تراكمية -135.47 — أوقفها"
+    },
+    {
+      "key": "breakout_ai",
+      "trades": 140,
+      "wins": 90,
+      "win_rate": 64.3,
+      "pnl": -50.35,
+      "avg_pnl": -0.36,
+      "verdict": "KILL",
+      "reason": "خسارة تراكمية -50.35 — أوقفها"
+    },
+    {
+      "key": "rsi_bb_revert",
+      "trades": 132,
+      "wins": 49,
+      "win_rate": 37.1,
+      "pnl": -26.79,
+      "avg_pnl": -0.2,
+      "verdict": "KILL",
+      "reason": "خسارة تراكمية -26.79 — أوقفها"
+    },
+    {
+      "key": "swing_1h",
+      "trades": 4,
+      "wins": 2,
+      "win_rate": 50.0,
+      "pnl": -5.07,
+      "avg_pnl": -1.27,
+      "verdict": "HOLD",
+      "reason": "عيّنة صغيرة (4) — راقب"
+    },
+    {
+      "key": "alma_stoch",
+      "trades": 30,
+      "wins": 8,
+      "win_rate": 26.7,
+      "pnl": -1.25,
+      "avg_pnl": -0.04,
+      "verdict": "TIGHTEN",
+      "reason": "WR 26.7% ضعيف — شدّد العتبة أو قلّل الحجم"
+    }
+  ],
+  "worst_assets": [
+    {
+      "key": "USDJPY",
+      "trades": 27,
+      "wins": 8,
+      "win_rate": 29.6,
+      "pnl": -109.66,
+      "avg_pnl": -4.06
+    },
+    {
+      "key": "ETH",
+      "trades": 87,
+      "wins": 36,
+      "win_rate": 41.4,
+      "pnl": -80.23,
+      "avg_pnl": -0.92
+    },
+    {
+      "key": "XRP",
+      "trades": 49,
+      "wins": 14,
+      "win_rate": 28.6,
+      "pnl": -28.82,
+      "avg_pnl": -0.59
+    },
+    {
+      "key": "BTC",
+      "trades": 84,
+      "wins": 30,
+      "win_rate": 35.7,
+      "pnl": -26.38,
+      "avg_pnl": -0.31
+    },
+    {
+      "key": "SOL",
+      "trades": 106,
+      "wins": 48,
+      "win_rate": 45.3,
+      "pnl": -17.18,
+      "avg_pnl": -0.16
+    },
+    {
+      "key": "SILVER",
+      "trades": 7,
+      "wins": 4,
+      "win_rate": 57.1,
+      "pnl": -16.56,
+      "avg_pnl": -2.37
+    },
+    {
+      "key": "ASSET",
+      "trades": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "pnl": -14.66,
+      "avg_pnl": -14.66
+    },
+    {
+      "key": "BNB",
+      "trades": 69,
+      "wins": 32,
+      "win_rate": 46.4,
+      "pnl": -13.77,
+      "avg_pnl": -0.2
+    }
+  ],
+  "by_close_reason": [
+    {
+      "key": "SL",
+      "trades": 649,
+      "wins": 133,
+      "win_rate": 20.5,
+      "pnl": -560.43,
+      "avg_pnl": -0.86
+    },
+    {
+      "key": "TRAIL",
+      "trades": 79,
+      "wins": 78,
+      "win_rate": 98.7,
+      "pnl": 44.6,
+      "avg_pnl": 0.56
+    },
+    {
+      "key": "TP",
+      "trades": 138,
+      "wins": 122,
+      "win_rate": 88.4,
+      "pnl": 149.21,
+      "avg_pnl": 1.08
+    }
+  ],
+  "by_direction": [
+    {
+      "key": "LONG",
+      "trades": 514,
+      "wins": 161,
+      "win_rate": 31.3,
+      "pnl": -207.8,
+      "avg_pnl": -0.4
+    },
+    {
+      "key": "SHORT",
+      "trades": 352,
+      "wins": 172,
+      "win_rate": 48.9,
+      "pnl": -158.82,
+      "avg_pnl": -0.45
+    }
+  ],
+  "by_edge_band": [
+    {
+      "band": "55-65",
+      "trades": 315,
+      "win_rate": 36.2,
+      "pnl": -111.45
+    },
+    {
+      "band": "65-75",
+      "trades": 332,
+      "win_rate": 27.7,
+      "pnl": -165.87
+    },
+    {
+      "band": "75-200",
+      "trades": 219,
+      "win_rate": 58.0,
+      "pnl": -89.3
+    }
+  ]
+}
